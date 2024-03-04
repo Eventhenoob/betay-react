@@ -1,5 +1,4 @@
 "use client";
-import React, { useEffect } from "react";
 import style from "./style.module.css";
 const ClientsShowcase = () => {
   const logos = [

@@ -20,8 +20,10 @@ const useMouseTrail = () => {
         offsetY = e.nativeEvent.offsetY;
       } else if (e) {
         // If nativeEvent is not available, use pageX and pageY
-        offsetX = e.pageX - body.offsetLeft;
-        offsetY = e.pageY - body.offsetTop;
+        if (body) {
+          offsetX = e.pageX - body.offsetLeft;
+          offsetY = e.pageY - body.offsetTop;
+        }
       }
 
       circle.classList.add(style["bubble"]);

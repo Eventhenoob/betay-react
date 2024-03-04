@@ -1,5 +1,3 @@
-import React from "react";
-
 const MotionBall = () => {
   return (
     <div className="absolute -right-16 top-16 ">

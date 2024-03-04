@@ -1,6 +1,5 @@
 "use client";
 import Lottie from "lottie-react";
-import React from "react";
 
 interface Props {
   heading: string;

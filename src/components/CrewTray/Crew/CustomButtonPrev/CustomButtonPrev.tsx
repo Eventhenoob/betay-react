@@ -2,8 +2,6 @@ import { GrFormPrevious } from "react-icons/gr";
 
 const CustomButtonPrev = ({
   onClick,
-  className,
-  style,
 }: {
   onClick?: () => void;
   className?: string;

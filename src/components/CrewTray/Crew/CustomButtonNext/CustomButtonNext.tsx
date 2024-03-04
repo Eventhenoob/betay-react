@@ -1,8 +1,6 @@
 import { MdOutlineNavigateNext } from "react-icons/md";
 const CustomButtonNext = ({
   onClick,
-  className,
-  style,
 }: {
   onClick?: () => void;
   className?: string;
