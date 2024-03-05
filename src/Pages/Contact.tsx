@@ -7,26 +7,23 @@ import MessageForm from "../components/MessageForm/MessageForm";
 const Contact = () => {
   const [position, setPosition] = useState("start");
   return (
-    <main className="overflow-hidden  h-screen w-screen flex items-center justify-center flex-col ">
-      <div className=" z-20 w-full h-full absolute top-0 left-0 flex overflow-hidden gap-96  justify-center flex-col">
+    <main className="overflow-hidden relative h-screen w-screen flex items-center justify-center flex-col ">
+      <div className=" z-20 w-full h-full absolute top-0 left-0 flex overflow-hidden md:gap-96 gap-20  justify-center flex-col">
         <VideoBG
           video="contactUsBg.mp4"
           isDarkBg={false}
           onLoadedData={() => {}}
         />
-        <Marquee className=" mt-40" gradient={false} speed={200}>
-          <h1 className="text-9xl text-slate-100 font-bold italic ">
+        <Marquee className=" md:mt-40" gradient={false} speed={200}>
+          <h1 className="text-6xl md:text-9xl text-slate-100 font-bold italic ">
             Get in touch - Start Your project - Say Hello - Ask a question -
             {"  "}
           </h1>
         </Marquee>
 
-        <div className="px-20 flex justify-between">
-          <div className="w-96  ">
-            <h3 className="mb-4 text-gray-500">
-              Tell us what you are looking to achive using our self-help form
-              below
-            </h3>
+        <div className="md:px-20 px-2 gap-10 md:gap-0 flex justify-between md:flex-row flex-col">
+          <div className="md:w-96">
+            <h3 className="mb-4 text-gray-500">Commencez une conversation.</h3>
             <ArrowButton
               direction="right"
               onClick={() => {

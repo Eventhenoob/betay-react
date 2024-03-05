@@ -7,10 +7,16 @@ import { GoArrowRight } from "react-icons/go";
 
 interface ArrowButtonProps {
   direction: "left" | "right" | "top" | "bottom";
+  type?: "button" | "submit" | "reset";
   onClick: () => void;
   text: string;
 }
-const ArrowButton = ({ direction, onClick, text }: ArrowButtonProps) => {
+const ArrowButton = ({
+  direction,
+  onClick,
+  text,
+  type = "button",
+}: ArrowButtonProps) => {
   const [hover, setHover] = useState(false);
   return (
     <button
@@ -18,7 +24,7 @@ const ArrowButton = ({ direction, onClick, text }: ArrowButtonProps) => {
       onMouseEnter={() => setHover(true)}
       onClick={onClick}
       className="flex text-sm gap-0 justify-center items-center "
-      type="button"
+      type={type}
     >
       <span
         className={

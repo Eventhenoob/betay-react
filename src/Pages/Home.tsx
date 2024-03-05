@@ -39,7 +39,7 @@ export default function Home() {
             ]}
           />
 
-          <div className="cta flex gap-2  md:gap-10 justify-center items-center md:mt-[12rem] mt-[20rem] lg:mt-44">
+          <div className="cta flex gap-2  md:gap-10 justify-center items-center  md:mt-[16rem] mt-[20rem] lg:mt-[22rem]">
             <RainbowHover text="Nos expertises et" />
             <Outline text="Nous découvrir" />
           </div>
