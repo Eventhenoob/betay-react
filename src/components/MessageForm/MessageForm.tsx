@@ -122,7 +122,7 @@ const MessageForm = ({ position, setPosition }: Props) => {
             direction="right"
             onClick={() => {
               setPosition("start");
-              setFormPosition("Sumbit");
+              setFormPosition("start");
             }}
             text="Sumbit"
           />
