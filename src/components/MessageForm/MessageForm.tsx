@@ -40,7 +40,7 @@ const MessageForm = ({ position, setPosition }: Props) => {
   }, [errors]);
   return (
     <form
-      onSubmit={handleSubmit((data, e) => {
+      onSubmit={handleSubmit((data) => {
         if (
           !errors.firstName &&
           !errors.lastName &&
