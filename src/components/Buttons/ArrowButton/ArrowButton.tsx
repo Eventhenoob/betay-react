@@ -4,7 +4,6 @@ import { GoArrowDown } from "react-icons/go";
 import { GoArrowUp } from "react-icons/go";
 import { GoArrowLeft } from "react-icons/go";
 import { GoArrowRight } from "react-icons/go";
-import style from "./style.module.css";
 
 interface ArrowButtonProps {
   direction: "left" | "right" | "top" | "bottom";
