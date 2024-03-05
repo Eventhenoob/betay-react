@@ -2,9 +2,10 @@
 interface Props {
   onLoadedData: () => void;
   isDarkBg: boolean;
+  video: string;
 }
 
-const VideoBG = ({ onLoadedData, isDarkBg }: Props) => {
+const VideoBG = ({ video, onLoadedData, isDarkBg }: Props) => {
   return (
     <div
       className={
@@ -28,7 +29,7 @@ const VideoBG = ({ onLoadedData, isDarkBg }: Props) => {
           "object-cover w-full h-full " + (isDarkBg ? " opacity-30" : "")
         }
       >
-        <source src="./header.mp4" type="video/mp4" />
+        <source src={`/${video}`} type="video/mp4" />
       </video>
     </div>
   );

@@ -1,18 +1,53 @@
-import ContactForm from "../components/ContactForm/ContactForm";
+import Marquee from "react-fast-marquee";
+import ArrowButton from "../components/Buttons/ArrowButton";
+import VideoBG from "../components/VideoBG";
+import { useState } from "react";
+import MessageForm from "../components/MessageForm/MessageForm";
 
 const Contact = () => {
+  const [position, setPosition] = useState("start");
   return (
-    <main className="overflow-hidden py-[40rem]  h-screen w-full flex items-center justify-center flex-col ">
-      <ContactForm
-        titleComponent={
-          <h1 className="text-4xl font-semibold ">
-            Want to connect? <br />
-            <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
-              Contact Us
-            </span>
+    <main className="overflow-hidden  h-screen w-screen flex items-center justify-center flex-col ">
+      <div className=" z-20 w-full h-full absolute top-0 left-0 flex overflow-hidden gap-96  justify-center flex-col">
+        <VideoBG
+          video="contactUsBg.mp4"
+          isDarkBg={false}
+          onLoadedData={() => {}}
+        />
+        <Marquee className=" mt-40" gradient={false} speed={200}>
+          <h1 className="text-9xl text-slate-100 font-bold italic ">
+            Get in touch - Start Your project - Say Hello - Ask a question -
+            {"  "}
           </h1>
-        }
-      />
+        </Marquee>
+
+        <div className="px-20 flex justify-between">
+          <div className="w-96  ">
+            <h3 className="mb-4 text-gray-500">
+              Tell us what you are looking to achive using our self-help form
+              below
+            </h3>
+            <ArrowButton
+              direction="right"
+              onClick={() => {
+                setPosition("form");
+              }}
+              text="Get in touch"
+            />
+          </div>
+
+          <div className="">
+            <h3 className="mb-4  text-gray-500">Contact Directly</h3>
+            <a
+              className="hover:text-green-400 transition-all duration-300"
+              href="email:helo@gmail.com"
+            >
+              helo@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+      <MessageForm position={position} setPosition={setPosition} />
     </main>
   );
 };

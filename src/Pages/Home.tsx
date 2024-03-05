@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <>
       <header className=" flex h-screen w-screen flex-col items-center justify-center p-5 pt-32  md:p-24">
-        <VideoBG isDarkBg={true} onLoadedData={() => {}} />
+        <VideoBG video="header.mp4" isDarkBg={true} onLoadedData={() => {}} />
         <div className="w-full lg:w-2/3  text-center">
           <RevelAnimation width="100%">
             <h1 className="text-white text-5xl md:text-6xl mb-4 font-main font-thin italic">
