@@ -1,8 +1,8 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 import HorizontalScrollCard from "./HorizontalScrollCard";
-import Outline from "../Buttons/Outline";
 import RevelAnimation from "../RevelAnimation";
+import PremiumButton from "../Buttons/PermiumButton";
 interface Props {
   onMouseEnter?: () => void;
   onMouseLeave?: () => void;
@@ -27,7 +27,7 @@ const HorizontalScrollCarousel = ({ onMouseEnter, onMouseLeave }: Props) => {
         onMouseLeave={onMouseLeave}
       />
       <div className="flex h-48 items-center justify-center">
-        <Outline text="NOS EXPERTISES" />
+        <PremiumButton text="NOS EXPERTISES" />
       </div>
     </div>
   );

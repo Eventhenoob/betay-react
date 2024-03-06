@@ -1,6 +1,6 @@
 "use client";
 import Lottie from "lottie-react";
-
+import style from "./style.module.css";
 interface Props {
   heading: string;
   description: string;
@@ -9,7 +9,12 @@ interface Props {
 
 const GoalCard = ({ animation, description, heading }: Props) => {
   return (
-    <div className="hover:scale-110 transition-all duration-500 w-[20rem] h-[30rem] sm:h-[30rem] sm:w-[25rem] md:h-[40rem] md:w-[30rem] bg-zinc-900 rounded-3xl flex flex-col items-center  ">
+    <div
+      className={
+        "hover:scale-110 transition-all duration-500 w-[20rem] h-[30rem] sm:h-[30rem] sm:w-[25rem] md:h-[40rem] md:w-[30rem] bg-zinc-900 rounded-3xl flex flex-col items-center  " +
+        style["card"]
+      }
+    >
       <Lottie className="w-1/2 -mt-28" animationData={animation} />
       <div className=" p-4">
         <h3 className="font-bold text-green-400 text-xl sm:text-2xl md:text-4xl mb-2 ">

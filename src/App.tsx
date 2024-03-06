@@ -7,6 +7,7 @@ import NotFound from "./Pages/NotFound";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import Contact from "./Pages/Contact";
+import News from "./Pages/News";
 
 const App: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const App: React.FC = () => {
         <Route path="/" Component={Home} />
         <Route path="/agence" Component={Agence} />
         <Route path="/contact" Component={Contact} />
+        <Route path="/news" Component={News} />
         <Route Component={NotFound} />
       </Routes>
       <Footer />

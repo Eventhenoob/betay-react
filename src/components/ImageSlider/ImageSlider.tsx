@@ -2,11 +2,7 @@
 import { useState } from "react";
 import style from "./style.module.css";
 
-const images = [
-  "https://images.pexels.com/photos/1710352/pexels-photo-1710352.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  "https://images.pexels.com/photos/309384/pexels-photo-309384.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  "https://images.pexels.com/photos/1610995/pexels-photo-1610995.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-];
+const images = ["/s1.jpeg", "/s2.jpeg", "/s3.jpeg"];
 
 const ImageSlider = () => {
   const [current, setCurrent] = useState(-1);

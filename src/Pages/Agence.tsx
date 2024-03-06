@@ -26,7 +26,7 @@ const Agence = () => {
       <main className="overflow-hidden min-h-screen w-full ">
         <section className="pt-80 relative">
           <div className="relative z-50">
-            <h2 className="md:text-6xl relative z-10 font-extralight text-4xl px-4 md:p-0 md:w-[60%] m-auto text-center text-bold text-green-400 mb-40 md:mb-60">
+            <h2 className="md:text-6xl font-heading relative z-10 font-extralight text-4xl px-4 md:p-0 md:w-[60%] m-auto text-center text-bold text-green-400 mb-40 md:mb-60">
               Excellence Collaborative : Élever la Communication
             </h2>
             <div className="flex justify-evenly  gap-96 lg:gap-0 flex-wrap">
@@ -46,10 +46,10 @@ const Agence = () => {
         </section>
         <section className="py-20">
           <div className="p-4  md:p-20">
-            <h2 className="text-2xl z-10 relative text-green-400">
+            <h2 className="text-6xl z-10 text-center font-heading mb-6 relative text-green-400">
               L&apos;agence
             </h2>
-            <p className="relative">
+            <p className="relative text-xl">
               Notre agence tire son inspiration de la vision novatrice de
               Charles Darwin, et nous nous engageons à guider nos clients dans
               la transformation digitale de leur communication
