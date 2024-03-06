@@ -1,6 +1,5 @@
 import GoalCard from "./../components/GoalCard";
 import ImageSlider from "./../components/ImageSlider";
-
 import openMindAnimation from "./../assets/openMind.json";
 import goalAnimation from "./../assets/targetAnimation.json";
 import CrewTray from "./../components/CrewTray";
@@ -24,22 +23,24 @@ const Agence = () => {
         </div>
       </header>
       <main className="min-h-screen w-full ">
-        <section className="pt-80">
-          <h2 className="md:text-6xl relative z-10 font-extralight text-4xl px-4 md:p-0 md:w-[60%] m-auto text-center text-bold text-green-400 mb-40 md:mb-60">
-            Excellence Collaborative : Élever la Communication
-          </h2>
-          <div className="flex justify-evenly  gap-96 lg:gap-0 flex-wrap">
-            <GoalCard
-              heading="Notre Engageant Manifeste"
-              animation={openMindAnimation}
-              description="Chez Agence Darwin, nous croyons en la collaboration transparente, l'adaptabilité et la recherche constante de l'excellence. Notre approche personnalisée garantit que chaque client bénéficie d'une solution sur mesure pour évoluer avec succès dans le monde numérique en constante évolution"
-            />
+        <section className="pt-80 relative">
+          <div className="relative z-50">
+            <h2 className="md:text-6xl relative z-10 font-extralight text-4xl px-4 md:p-0 md:w-[60%] m-auto text-center text-bold text-green-400 mb-40 md:mb-60">
+              Excellence Collaborative : Élever la Communication
+            </h2>
+            <div className="flex justify-evenly  gap-96 lg:gap-0 flex-wrap">
+              <GoalCard
+                heading="Notre Engageant Manifeste"
+                animation={openMindAnimation}
+                description="Chez Agence Darwin, nous croyons en la collaboration transparente, l'adaptabilité et la recherche constante de l'excellence. Notre approche personnalisée garantit que chaque client bénéficie d'une solution sur mesure pour évoluer avec succès dans le monde numérique en constante évolution"
+              />
 
-            <GoalCard
-              heading="Collaboration Distinguée pour une Évolution Réussie"
-              animation={goalAnimation}
-              description="Votre réussite est notre priorité. Nous travaillons main dans la main avec nos clients, comprenant leurs besoins uniques pour créer des solutions qui vont au-delà des attentes et stimulent une véritable évolution dans leur communication"
-            />
+              <GoalCard
+                heading="Collaboration Distinguée pour une Évolution Réussie"
+                animation={goalAnimation}
+                description="Votre réussite est notre priorité. Nous travaillons main dans la main avec nos clients, comprenant leurs besoins uniques pour créer des solutions qui vont au-delà des attentes et stimulent une véritable évolution dans leur communication"
+              />
+            </div>
           </div>
         </section>
         <section className="py-20">

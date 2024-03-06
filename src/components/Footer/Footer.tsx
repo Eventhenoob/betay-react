@@ -1,53 +1,53 @@
 "use client";
 import { Link } from "react-router-dom";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import style from "./style.module.css";
 import { TiSocialInstagram, TiSocialLinkedin } from "react-icons/ti";
 import { Meteors } from "../Meteors/Meteors";
 
 const Footer = () => {
-  const ballRef = useRef<HTMLDivElement>(null);
-  const ball2Ref = useRef<HTMLDivElement>(null);
+  // const ballRef = useRef<HTMLDivElement>(null);
+  // const ball2Ref = useRef<HTMLDivElement>(null);
+  // useEffect(() => {
+  //   if (ballRef.current && ball2Ref.current && footerRef.current) {
+  //     const footer = footerRef.current;
+  //     const ball1 = ballRef.current;
+  //     const ball2 = ball2Ref.current;
+  //     const loop = () => {
+  //       const hRange = footer.clientWidth - ball1.clientWidth;
+  //       const vRange = footer.clientHeight - ball1.clientHeight;
+  //       const time = performance.now() * 0.0002;
+
+  //       const x = Math.abs(Math.sin(time)) * hRange;
+  //       const y = Math.abs(Math.cos(time)) * vRange;
+
+  //       ball1.style.top = y + "px";
+  //       ball1.style.left = x + "px";
+
+  //       ball2.style.top = y + "px";
+  //       ball2.style.right = x + "px";
+  //       requestAnimationFrame(loop);
+  //     };
+
+  //     loop();
+  //   }
+  // }, []);
   const footerRef = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    if (ballRef.current && ball2Ref.current && footerRef.current) {
-      const footer = footerRef.current;
-      const ball1 = ballRef.current;
-      const ball2 = ball2Ref.current;
-      const loop = () => {
-        const hRange = footer.clientWidth - ball1.clientWidth;
-        const vRange = footer.clientHeight - ball1.clientHeight;
-        const time = performance.now() * 0.0002;
-
-        const x = Math.abs(Math.sin(time)) * hRange;
-        const y = Math.abs(Math.cos(time)) * vRange;
-
-        ball1.style.top = y + "px";
-        ball1.style.left = x + "px";
-
-        ball2.style.top = y + "px";
-        ball2.style.right = x + "px";
-        requestAnimationFrame(loop);
-      };
-
-      loop();
-    }
-  }, []);
   return (
     <footer
       ref={footerRef}
       className=" relative overflow-hidden lg:pl-36 bg-gray-950 w-full p-6 md:p-10 py-20 "
     >
-      <div
+      {/* <div
         ref={ballRef}
         className="ball bg-gray-200 z-50 absolute top-0 left-0 opacity-70 w-10 h-10 rounded-full"
       ></div>
       <div
         ref={ball2Ref}
         className="ball bg-gray-200 z-50 absolute top-0 right-0 opacity-70 w-10 h-10 rounded-full"
-      ></div>
+      ></div> */}
       <div className="">
-        <Link to="/" className="text-4xl font-bold">
+        <Link to="/" className="relative z-50 text-4xl font-bold">
           <img src="/logo.png" alt="" className="h-20" />
         </Link>
         <p className="text-4xl mt-7 text-outline text-gray-900 font-bold">
@@ -97,10 +97,10 @@ const Footer = () => {
         <p className="">mentions légales</p>
       </div>
       <div className="absolute top-0 right-0">
-        <Meteors number={30} />
+        <Meteors number={40} />
       </div>
-      <div className="absolute top-0 right-96">
-        <Meteors number={30} />
+      <div className="absolute top-0 right-[50%]">
+        <Meteors number={20} />
       </div>
 
       <div className="w-full h-full absolute top-0 left-0 ">

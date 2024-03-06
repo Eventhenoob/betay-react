@@ -7,7 +7,6 @@ const {
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{ts,tsx}"],
-  darkMode: "class",
   theme: {
     screens: {
       sm: "640px",
