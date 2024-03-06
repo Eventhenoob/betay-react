@@ -42,7 +42,7 @@ export default function Home() {
                 "votre agence en marketing digital, accompagne les entreprises de toutes tailles et de tous secteurs grâce à son expertise en acquisition et création. Nos consultants web passionnés conçoivent et mettent en œuvre votre stratégie digitale avec pour objectif la performance et la rentabilité. Nous vous accompagnons dans la réalisation de vos objectifs de visibilité et d'expansion à travers des stratégies numériques innovantes et sur mesure.",
               ]}
             />
-            <div className="cta flex gap-2  md:gap-10 justify-center items-center  md:mt-[16rem] mt-[20rem] xl:mt-[16rem] lg:mt-[19rem]">
+            <div className="cta flex gap-2  md:gap-10 justify-center items-center  md:mt-[16rem] mb-10 mt-[20rem] xl:mt-[16rem] lg:mt-[19rem]">
               <RainbowHover text="Nos expertises et" />
               <Outline text="Nous découvrir" />
             </div>
