@@ -15,7 +15,7 @@ const HorizontalScrollCarousel = ({ onMouseEnter, onMouseLeave }: Props) => {
           <h2
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
-            className="text-4xl text-white font-bold text-center "
+            className="text-4xl text-white font-heading font-bold text-center "
           >
             NOS EXPERTISES
           </h2>

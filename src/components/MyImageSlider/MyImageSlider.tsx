@@ -36,29 +36,29 @@ const MyImageSlider = () => {
     >
       <div ref={slideRef} className={style["slide"]}>
         <div
-          className={"item " + style["item"]}
+          className={"item  " + style["item"]}
           style={{ backgroundImage: "url(e1.jpeg)" }}
         ></div>
         <div
-          className={"item " + style["item"]}
+          className={"item  " + style["item"]}
           style={{ backgroundImage: "url(e1.jpeg)" }}
         >
           <div className={style["content"]}></div>
         </div>
         <div
-          className={"item " + style["item"]}
+          className={"item  " + style["item"]}
           style={{ backgroundImage: "url(e1.jpeg)" }}
         >
           <div className={style["content"]}></div>
         </div>
         <div
-          className={"item " + style["item"]}
+          className={"item  " + style["item"]}
           style={{ backgroundImage: "url(e1.jpeg)" }}
         >
           <div className={style["content"]}></div>
         </div>
         <div
-          className={"item " + style["item"]}
+          className={"item  " + style["item"]}
           style={{ backgroundImage: "url(e1.jpeg)" }}
         >
           <div className={style["content"]}></div>

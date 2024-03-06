@@ -38,7 +38,7 @@ const HorizontalScrollCard = ({
               <h2
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
-                className="font-bold md:text-xl lg:text-2xl"
+                className="font-heading font-bold md:text-xl lg:text-2xl"
               >
                 {subData.heading}
               </h2>

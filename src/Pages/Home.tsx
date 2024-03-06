@@ -9,6 +9,7 @@ import VideoBG from "./..//components/VideoBG";
 import CursorMask from "../components/CursorMark/CursorMask";
 import { useState } from "react";
 import MyImageSlider from "../components/MyImageSlider/MyImageSlider";
+import PremiumButton from "../components/Buttons/PermiumButton";
 
 export default function Home() {
   const [isHovered, setIsHovered] = useState(false);
@@ -30,9 +31,9 @@ export default function Home() {
               <h1
                 onMouseEnter={enableHover}
                 onMouseLeave={disableHover}
-                className=" text-white text-5xl md:text-6xl mb-10 font-main font-thin italic"
+                className=" text-white font-heading text-5xl md:text-6xl mb-10  font-thin italic"
               >
-                DARVIN!
+                DARWIN!
               </h1>
             </RevelAnimation>
             <AutoChangeableText
@@ -61,8 +62,8 @@ export default function Home() {
           <div className="h-screen">
             <MyImageSlider />
           </div>
-          <div className="flex items-center mt-20 justify-center">
-            <Outline text="Cas clients" />
+          <div className="flex items-center mt-20 mb-10 justify-center">
+            <PremiumButton text="Cas clients" />
           </div>
         </section>
       </main>

@@ -29,7 +29,7 @@ const Contact = () => {
           <h1
             onMouseEnter={enableHover}
             onMouseLeave={disableHover}
-            className="text-6xl md:text-9xl text-slate-100 font-light italic "
+            className="text-6xl md:text-9xl  text-slate-100 font-light italic "
           >
             Get in touch - Start Your project - Say Hello - Ask a question -
             {"  "}

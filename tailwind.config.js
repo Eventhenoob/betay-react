@@ -81,6 +81,7 @@ module.exports = {
       },
       fontFamily: {
         main: ["Poppins", "sans-serif"],
+        heading: ["kalam", "cursive"],
       },
     },
   },
