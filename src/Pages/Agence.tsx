@@ -1,5 +1,6 @@
 import GoalCard from "./../components/GoalCard";
 import ImageSlider from "./../components/ImageSlider";
+
 import openMindAnimation from "./../assets/openMind.json";
 import goalAnimation from "./../assets/targetAnimation.json";
 import CrewTray from "./../components/CrewTray";
@@ -22,7 +23,7 @@ const Agence = () => {
           </p>
         </div>
       </header>
-      <main className="min-h-screen w-full ">
+      <main className="overflow-hidden min-h-screen w-full ">
         <section className="pt-80 relative">
           <div className="relative z-50">
             <h2 className="md:text-6xl relative z-10 font-extralight text-4xl px-4 md:p-0 md:w-[60%] m-auto text-center text-bold text-green-400 mb-40 md:mb-60">
