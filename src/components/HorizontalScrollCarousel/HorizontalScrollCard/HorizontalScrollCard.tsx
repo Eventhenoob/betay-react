@@ -7,9 +7,17 @@ interface CardData {
     heading: string;
     description: string;
   }[];
+  onMouseEnter?: () => void;
+  onMouseLeave?: () => void;
 }
 
-const HorizontalScrollCard = ({ img, mainTitle, subText }: CardData) => {
+const HorizontalScrollCard = ({
+  img,
+  mainTitle,
+  subText,
+  onMouseEnter,
+  onMouseLeave,
+}: CardData) => {
   return (
     <div className="w-screen text-white flex md:flex-row flex-col h-[90vh] py-10">
       <div className="md:w-1/2 w-full h-2/6 md:h-full relative flex justify-center items-center">
@@ -27,7 +35,11 @@ const HorizontalScrollCard = ({ img, mainTitle, subText }: CardData) => {
         {subText.map((subData, i) => (
           <RevelAnimation key={i} width="fit-content">
             <div className="w-full flex flex-col justify-start">
-              <h2 className="font-bold md:text-xl lg:text-2xl">
+              <h2
+                onMouseEnter={onMouseEnter}
+                onMouseLeave={onMouseLeave}
+                className="font-bold md:text-xl lg:text-2xl"
+              >
                 {subData.heading}
               </h2>
               <p className="">{subData.description}</p>

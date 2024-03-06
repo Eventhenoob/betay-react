@@ -23,7 +23,7 @@ const ArrowButton = ({
       onMouseLeave={() => setHover(false)}
       onMouseEnter={() => setHover(true)}
       onClick={onClick}
-      className="flex text-sm gap-0 justify-center items-center "
+      className="flex text-sm gap-0 relative z-40 justify-center items-center "
       type={type}
     >
       <span

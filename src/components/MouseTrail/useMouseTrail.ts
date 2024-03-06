@@ -9,7 +9,7 @@ const useMouseTrail = () => {
     counter++;
 
     // Only proceed and reset the counter every 5th call
-    if (counter % 5 === 0) {
+    if (counter % 8 === 0) {
       const body = document.querySelector("body");
       const circle = document.createElement("span");
 
@@ -29,9 +29,9 @@ const useMouseTrail = () => {
       circle.classList.add(style["bubble"]);
       circle.style.left = offsetX + "px";
       circle.style.top = offsetY + "px";
-      let size = Math.random() * 100;
-      circle.style.width = 20 + size + "px";
-      circle.style.height = 20 + size + "px";
+      let size = Math.random() * 40;
+      circle.style.width = 10 + size + "px";
+      circle.style.height = 10 + size + "px";
       body?.appendChild(circle);
 
       setTimeout(() => {

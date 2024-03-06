@@ -2,6 +2,9 @@
 import { Link } from "react-router-dom";
 import { useEffect, useRef } from "react";
 import style from "./style.module.css";
+import { TiSocialInstagram, TiSocialLinkedin } from "react-icons/ti";
+import { Meteors } from "../Meteors/Meteors";
+import { MeteorsDemo } from "../temp";
 
 const Footer = () => {
   const ballRef = useRef<HTMLDivElement>(null);
@@ -34,7 +37,7 @@ const Footer = () => {
   return (
     <footer
       ref={footerRef}
-      className=" relative lg:pl-36 bg-gray-950 w-full p-6 md:p-10 py-20"
+      className=" relative lg:pl-36 bg-gray-950 w-full p-6 md:p-10 py-20 "
     >
       <div
         ref={ballRef}
@@ -46,14 +49,14 @@ const Footer = () => {
       ></div>
       <div className="">
         <Link to="/" className="text-4xl font-bold">
-          Logo.
+          <img src="/logo.png" alt="" className="h-20" />
         </Link>
         <p className="text-4xl mt-7 text-outline text-gray-900 font-bold">
           prêt à faire le point?
         </p>
       </div>
 
-      <div className="mt-10 flex items-center gap-3 ">
+      <div className="mt-10 flex items-center relative z-50 gap-3 ">
         <div className="w-20 h-[1px] bg-slate-50"></div>
         <a
           className="text-xl transition-all duration-300 hover:text-green-400 font-bold"
@@ -62,11 +65,11 @@ const Footer = () => {
           0185121850
         </a>
       </div>
-      <form className="mt-10 mb-20 flex-wrap">
+      <form className="mt-10 mb-20 flex-wrap relative z-50">
         <p className="mb-4 text-xl font-bold">
           inscrivez-vous à notre newsletter
         </p>
-        <div className="flex gap-2 flex-wrap">
+        <div className="flex gap-2  flex-wrap">
           <input
             type="email"
             placeholder="votre adresse email"
@@ -81,12 +84,21 @@ const Footer = () => {
           </button>
         </div>
       </form>
+      <div className="mt-10 text-4xl  flex items-center gap-3 relative z-50">
+        <a href="" className="">
+          <TiSocialLinkedin className="hover:text-blue-400 transition-all duration-500" />
+        </a>
+        <a href="" className="">
+          <TiSocialInstagram className="hover:text-pink-600 transition-all duration-500" />
+        </a>
+      </div>
+
       <div className="mt-4 mb-2 text-center justify-center items-center flex gap-4 flex-wrap text-slate-300">
         <p className="">BE-TAYE &#169; 2024. Tous droits réservés.</p>
         <p className="">mentions légales</p>
       </div>
 
-      <div className="w-full h-full absolute top-0 left-0 z-50">
+      <div className="w-full h-full absolute top-0 left-0 ">
         <article className={style["wrap"]}>
           <article className={style["lightings"]}>
             <section className={style["one"] + " " + style["section"]}>

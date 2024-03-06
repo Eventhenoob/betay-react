@@ -7,10 +7,12 @@ import NotFound from "./Pages/NotFound";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import Contact from "./Pages/Contact";
+import Cursor from "./components/Cursor";
 
 const App: React.FC = () => {
   return (
     <Router>
+      
       <Navigation />
       <Routes>
         <Route path="/" Component={Home} />

@@ -22,8 +22,8 @@ interface Props {
 const MessageForm = ({ position, setPosition }: Props) => {
   type FormData = z.infer<typeof schema>;
   const [formPosition, setFormPosition] = useState<
-    "start" | "name" | "email" | "message"
-  >("start");
+    "name" | "email" | "message"
+  >("name");
   const {
     register,
     handleSubmit,
@@ -47,8 +47,7 @@ const MessageForm = ({ position, setPosition }: Props) => {
           !errors.email &&
           !errors.message
         ) {
-          console.log(data);
-          setFormPosition("start");
+          setFormPosition("name");
           setPosition("start");
         }
       })}
@@ -57,32 +56,6 @@ const MessageForm = ({ position, setPosition }: Props) => {
         (position === "form" ? "translate-x-0" : "translate-x-full")
       }
     >
-      <div
-        className={
-          "w-full h-full flex flex-col transition-all duration-500 justify-center items-center  top-0 left-0 p-10 absolute z-20 " +
-          (formPosition === "start" ? " translate-x-0 " : " translate-x-full ")
-        }
-      >
-        <div className="">
-          <RevelAnimation width="100%">
-            <h2 className="md:text-8xl text-4xl  mb-4">Start</h2>
-          </RevelAnimation>
-          <RevelAnimation width="100%">
-            <p className="md:w-[40rem] mb-60">
-              We are excited to work with you but first we need some details
-              about your project to guide you to the best position.
-            </p>
-          </RevelAnimation>
-          <ArrowButton
-            direction="bottom"
-            onClick={() => {
-              setFormPosition("name");
-            }}
-            text="continue"
-          />
-        </div>
-      </div>
-
       <div
         className={
           "w-full h-full transition-all duration-500 p-10 z-30 absolute top-0 left-0 bg-black flex justify-center items-center " +
@@ -97,8 +70,8 @@ const MessageForm = ({ position, setPosition }: Props) => {
               What's your name?
             </p>
           </RevelAnimation>
-          <div className="">
-            <div className="w-full flex md:flex-row flex-col gap-10 mb-10 md:mb-32">
+          <div className="mb-10 md:mb-32">
+            <div className="w-full flex md:flex-row flex-col gap-10 ">
               <input
                 {...register("firstName")}
                 type="text"
@@ -119,13 +92,22 @@ const MessageForm = ({ position, setPosition }: Props) => {
               <p className="text-red-500">{errors.lastName?.message}</p>
             )}
           </div>
-          <ArrowButton
-            direction="bottom"
-            onClick={() => {
-              setFormPosition("email");
-            }}
-            text="continue"
-          />
+          <div className="flex justify-between ">
+            <ArrowButton
+              direction="right"
+              onClick={() => {
+                setFormPosition("email");
+              }}
+              text="continue"
+            />
+            <ArrowButton
+              text="Exit"
+              direction="left"
+              onClick={() => {
+                setPosition("start");
+              }}
+            />
+          </div>
         </div>
       </div>
 
@@ -155,13 +137,27 @@ const MessageForm = ({ position, setPosition }: Props) => {
               <p className="text-red-500">{errors.email?.message}</p>
             )}
           </div>
-          <ArrowButton
-            direction="bottom"
-            onClick={() => {
-              setFormPosition("message");
-            }}
-            text="continue"
-          />
+          <div className="flex justify-between ">
+            <ArrowButton
+              direction="bottom"
+              onClick={() => {
+                setFormPosition("message");
+              }}
+              text="continue"
+            />
+            <ArrowButton
+              text="move back"
+              direction="left"
+              onClick={() => {
+                setFormPosition((prev) => {
+                  if (prev == "name") {
+                    return prev;
+                  } else if (prev == "email") return "name";
+                  else return "email";
+                });
+              }}
+            />
+          </div>
         </div>
       </div>
 
@@ -192,12 +188,27 @@ const MessageForm = ({ position, setPosition }: Props) => {
               )}
             </div>
           </div>
-          <ArrowButton
-            type="submit"
-            direction="right"
-            onClick={() => {}}
-            text="Submit"
-          />
+          <div className="flex justify-between ">
+            <ArrowButton
+              type="submit"
+              direction="right"
+              onClick={() => {}}
+              text="Submit"
+            />
+
+            <ArrowButton
+              text="move back"
+              direction="top"
+              onClick={() => {
+                setFormPosition((prev) => {
+                  if (prev == "name") {
+                    return prev;
+                  } else if (prev == "email") return "name";
+                  else return "email";
+                });
+              }}
+            />
+          </div>
         </div>
       </div>
     </form>

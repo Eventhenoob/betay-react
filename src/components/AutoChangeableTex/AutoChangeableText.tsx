@@ -3,9 +3,15 @@ import { useEffect, useState } from "react";
 import style from "./AutoChangeableText.module.css";
 interface Props {
   textArray: string[];
+  onMouseEnter?: () => void;
+  onMouseLeave?: () => void;
 }
 
-const AutoChangeableText = ({ textArray }: Props) => {
+const AutoChangeableText = ({
+  textArray,
+  onMouseEnter = () => {},
+  onMouseLeave = () => {},
+}: Props) => {
   const [currentSelected, setCurrentSelected] = useState(0);
   useEffect(() => {
     const interval = setInterval(() => {
@@ -21,6 +27,8 @@ const AutoChangeableText = ({ textArray }: Props) => {
     <div className="relative flex w-full justify-center items-center">
       {textArray.map((text, index) => (
         <p
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}
           key={index}
           className={
             style["textItem"] +

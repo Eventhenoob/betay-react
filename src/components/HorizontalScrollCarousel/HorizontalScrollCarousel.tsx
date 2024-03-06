@@ -3,19 +3,29 @@ import { useRef } from "react";
 import HorizontalScrollCard from "./HorizontalScrollCard";
 import Outline from "../Buttons/Outline";
 import RevelAnimation from "../RevelAnimation";
-
-const HorizontalScrollCarousel = () => {
+interface Props {
+  onMouseEnter?: () => void;
+  onMouseLeave?: () => void;
+}
+const HorizontalScrollCarousel = ({ onMouseEnter, onMouseLeave }: Props) => {
   return (
     <div className="">
       <RevelAnimation width="fit-content">
-        <div className="flex h-48 items-center justify-center">
-          <h2 className="text-4xl text-white font-bold text-center ">
+        <div className="flex h-20 items-center justify-center">
+          <h2
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+            className="text-4xl text-white font-bold text-center "
+          >
             NOS EXPERTISES
           </h2>
         </div>
       </RevelAnimation>
 
-      <HorizontalScrollCarouselContainer />
+      <HorizontalScrollCarouselContainer
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+      />
       <div className="flex h-48 items-center justify-center">
         <Outline text="NOS EXPERTISES" />
       </div>
@@ -23,7 +33,13 @@ const HorizontalScrollCarousel = () => {
   );
 };
 
-const HorizontalScrollCarouselContainer = () => {
+const HorizontalScrollCarouselContainer = ({
+  onMouseEnter,
+  onMouseLeave,
+}: {
+  onMouseEnter?: () => void;
+  onMouseLeave?: () => void;
+}) => {
   const targetRef = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -36,7 +52,9 @@ const HorizontalScrollCarouselContainer = () => {
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-10 pt-20">
           <HorizontalScrollCard
-            img="e1.jpg"
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+            img="e1.jpeg"
             mainTitle="Stratégie de communication"
             subText={[
               {
@@ -58,7 +76,9 @@ const HorizontalScrollCarouselContainer = () => {
           />
 
           <HorizontalScrollCard
-            img="e2.jpg"
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+            img="e2.jpeg"
             mainTitle="VOS SUPPORTS DE COMMUNICATION"
             subText={[
               {
@@ -80,7 +100,9 @@ const HorizontalScrollCarouselContainer = () => {
           />
 
           <HorizontalScrollCard
-            img="e3.jpg"
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+            img="e3.jpeg"
             mainTitle="Community Management"
             subText={[
               {

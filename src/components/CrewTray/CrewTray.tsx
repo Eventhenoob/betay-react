@@ -5,8 +5,11 @@ import Crew from "./Crew";
 import CustomButtonPrev from "./Crew/CustomButtonPrev";
 import CustomButtonNext from "./Crew/CustomButtonNext";
 import Slider from "react-slick";
+import { useRef } from "react";
 
 const CrewTray = () => {
+  let sliderRef = useRef<Slider | null>(null);
+
   const settings = {
     dots: true,
 
@@ -14,8 +17,6 @@ const CrewTray = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 3,
-    nextArrow: <CustomButtonPrev />,
-    prevArrow: <CustomButtonNext />,
     responsive: [
       {
         breakpoint: 1024,
@@ -43,41 +44,60 @@ const CrewTray = () => {
       },
     ],
   };
+
   return (
     <div className="py-20 slider-container">
-      {/* <Slider {...settings} className="w-full"> */}
-      <Slider {...settings} className=" relative ">
+      <Slider
+        {...settings}
+        ref={(slider) => {
+          sliderRef.current = slider;
+        }}
+        className=" relative "
+      >
         <Crew
-          bigImage="e1.jpg"
+          bigImage="e1.jpeg"
           name="Even"
           post="Web Developer"
-          smallImage="e1.jpg"
+          smallImage="e1.jpeg"
         />
         <Crew
-          bigImage="e1.jpg"
+          bigImage="e1.jpeg"
           name="Even"
           post="Web Developer"
-          smallImage="e1.jpg"
+          smallImage="e1.jpeg"
         />
         <Crew
-          bigImage="e1.jpg"
+          bigImage="e1.jpeg"
           name="Even"
           post="Web Developer"
-          smallImage="e1.jpg"
+          smallImage="e1.jpeg"
         />
         <Crew
-          bigImage="e1.jpg"
+          bigImage="e1.jpeg"
           name="Even"
           post="Web Developer"
-          smallImage="e1.jpg"
-        />
-        <Crew
-          bigImage="e1.jpg"
-          name="Even"
-          post="Web Developer"
-          smallImage="e1.jpg"
+          smallImage="e1.jpeg"
         />
       </Slider>
+
+      <div className="w-full relative">
+        <div className=" m-auto mt-10 flex justify-center gap-10">
+          <div className="w-10 ">
+            <CustomButtonPrev
+              onClick={() => {
+                sliderRef.current?.slickPrev();
+              }}
+            />
+          </div>
+          <div className="w-10 ">
+            <CustomButtonNext
+              onClick={() => {
+                sliderRef.current?.slickNext();
+              }}
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
