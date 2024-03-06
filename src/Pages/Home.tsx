@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <>
       <CursorMask isHovered={isHovered} />
-      <header className="flex min-h-screen w-screen flex-col items-center justify-center p-5 pt-32  md:p-24">
+      <header className="flex h-max md:h-screen min-h-screen w-screen flex-col items-center justify-center p-5 pt-32  md:p-24">
         <VideoBG video="header.mp4" isDarkBg={true} onLoadedData={() => {}} />
         <div className="absolute top-0 left-0 flex h-screen w-screen flex-col items-center justify-center p-5 pt-32  md:p-24">
           <div className="content w-full lg:w-2/3  text-center">
