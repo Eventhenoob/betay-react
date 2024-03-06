@@ -11,7 +11,7 @@ const Agence = () => {
     <>
       <header className="w-screen overflow-hidden h-screen flex justify-center items-center">
         <div className="relative group">
-          <div className="w-[150rem]  h-[150rem] z-10 bg-green-600 absolute origin-center -top-[40rem] -left-[10rem] scale-0 group-[:hover]:scale-100 transition-all duration-1000 group-[:hover]:rotate-0 rotate-90"></div>
+          <div className=" w-[150rem]  h-[150rem] z-10 bg-green-600 absolute origin-center -top-[40rem] -left-[10rem] scale-0 group-[:hover]:scale-100 transition-all duration-1000 group-[:hover]:rotate-0 rotate-90"></div>
           <h1 className="relative z-30 text-5xl   md:text-[8rem] lg:text-[11rem] text-center  text-outline transition-all duration-1000 flex flex-wrap leading-[8rem] font-bold text-[#131312]">
             <span className="group-[:hover]:text-white transition-all duration-1000">
               Bienvenue

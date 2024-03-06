@@ -10,7 +10,7 @@ const NavigationIcon = ({ onClick, isActive }: NavigationIconProps) => {
     <button
       onClick={onClick}
       className={
-        "justify-center items-center flex flex-col " +
+        "justify-center p-4 items-center flex flex-col " +
         style["button"] +
         " " +
         (isActive && style["active"])

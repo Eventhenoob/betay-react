@@ -11,7 +11,7 @@ const CrewTray = () => {
   let sliderRef = useRef<Slider | null>(null);
 
   const settings = {
-    dots: true,
+    dots: false,
 
     infinite: true,
     speed: 500,
@@ -54,6 +54,54 @@ const CrewTray = () => {
         }}
         className=" relative "
       >
+        <Crew
+          bigImage="e1.jpeg"
+          name="Even"
+          post="Web Developer"
+          smallImage="e1.jpeg"
+        />
+        <Crew
+          bigImage="e1.jpeg"
+          name="Even"
+          post="Web Developer"
+          smallImage="e1.jpeg"
+        />
+        <Crew
+          bigImage="e1.jpeg"
+          name="Even"
+          post="Web Developer"
+          smallImage="e1.jpeg"
+        />
+        <Crew
+          bigImage="e1.jpeg"
+          name="Even"
+          post="Web Developer"
+          smallImage="e1.jpeg"
+        />
+        <Crew
+          bigImage="e1.jpeg"
+          name="Even"
+          post="Web Developer"
+          smallImage="e1.jpeg"
+        />
+        <Crew
+          bigImage="e1.jpeg"
+          name="Even"
+          post="Web Developer"
+          smallImage="e1.jpeg"
+        />
+        <Crew
+          bigImage="e1.jpeg"
+          name="Even"
+          post="Web Developer"
+          smallImage="e1.jpeg"
+        />
+        <Crew
+          bigImage="e1.jpeg"
+          name="Even"
+          post="Web Developer"
+          smallImage="e1.jpeg"
+        />
         <Crew
           bigImage="e1.jpeg"
           name="Even"

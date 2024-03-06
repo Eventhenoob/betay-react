@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useRef } from "react";
 import style from "./style.module.css";
 import { TiSocialInstagram, TiSocialLinkedin } from "react-icons/ti";
+import { Meteors } from "../Meteors/Meteors";
 
 const Footer = () => {
   const ballRef = useRef<HTMLDivElement>(null);
@@ -35,7 +36,7 @@ const Footer = () => {
   return (
     <footer
       ref={footerRef}
-      className=" relative lg:pl-36 bg-gray-950 w-full p-6 md:p-10 py-20 "
+      className=" relative overflow-hidden lg:pl-36 bg-gray-950 w-full p-6 md:p-10 py-20 "
     >
       <div
         ref={ballRef}
@@ -94,6 +95,12 @@ const Footer = () => {
       <div className="mt-4 mb-2 text-center justify-center items-center flex gap-4 flex-wrap text-slate-300">
         <p className="">BE-TAYE &#169; 2024. Tous droits réservés.</p>
         <p className="">mentions légales</p>
+      </div>
+      <div className="absolute top-0 right-0">
+        <Meteors number={30} />
+      </div>
+      <div className="absolute top-0 right-96">
+        <Meteors number={30} />
       </div>
 
       <div className="w-full h-full absolute top-0 left-0 ">
