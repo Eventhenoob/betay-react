@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import React, { useState } from "react";
 import useMousePosition from "../../hooks/useMousePosition";
 import styles from "./sytle.module.css";
 import useMobile from "../../utils/useMobile";

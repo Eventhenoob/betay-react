@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import { useEffect, useRef } from "react";
 import style from "./style.module.css";
 import { TiSocialInstagram, TiSocialLinkedin } from "react-icons/ti";
-import { Meteors } from "../Meteors/Meteors";
-import { MeteorsDemo } from "../temp";
 
 const Footer = () => {
   const ballRef = useRef<HTMLDivElement>(null);

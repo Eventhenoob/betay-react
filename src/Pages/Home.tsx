@@ -5,26 +5,10 @@ import RainbowHover from "./..//components/Buttons/RanibowHover/RainbowHover";
 import HorizontalScrollCarousel from "./..//components/HorizontalScrollCarousel";
 import RevelAnimation from "./..//components/RevelAnimation";
 import VideoBG from "./..//components/VideoBG";
-import ParallaxScrollGallery from "./..//components/parallaxScrollGallery";
 
 import CursorMask from "../components/CursorMark/CursorMask";
 import { useState } from "react";
 import MyImageSlider from "../components/MyImageSlider/MyImageSlider";
-
-const images = [
-  "/e1.jpg",
-  "/e2.jpg",
-  "/e3.jpg",
-  "/e1.jpg",
-  "/e2.jpg",
-  "/e3.jpg",
-  "/e1.jpg",
-  "/e2.jpg",
-  "/e3.jpg",
-  "/e1.jpg",
-  "/e2.jpg",
-  "/e3.jpg",
-];
 
 export default function Home() {
   const [isHovered, setIsHovered] = useState(false);
