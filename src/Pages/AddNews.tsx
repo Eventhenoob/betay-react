@@ -67,7 +67,7 @@ const AddNews = () => {
             axios
               .post("http://localhost:3010/news", formData)
 
-              .then((res) => {
+              .then((_res) => {
                 toggleShowSuccess("News added successfully");
               })
               .catch((error: any) => {

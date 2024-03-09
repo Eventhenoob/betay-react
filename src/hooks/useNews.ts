@@ -10,7 +10,7 @@ interface NewsResponse {
 const useNews = (page: number = 1, limit: number = 10) => {
   const [newsData, setNewsData] = useState<NewsResponse | null>(null);
   const [err, setError] = useState<null | string>(null);
-  const getNews = async (page: number, limit: number) => {
+  const getNews = async (page: number = 1, limit: number = 10) => {
     try {
       setNewsData(null);
       setError(null);
