@@ -8,17 +8,21 @@ import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import Contact from "./Pages/Contact";
 import News from "./Pages/News";
+import SingleNews from "./Pages/SingleNews"; // Import the component for single news
+import AddNews from "./Pages/AddNews";
 
 const App: React.FC = () => {
   return (
     <Router>
       <Navigation />
       <Routes>
-        <Route path="/" Component={Home} />
-        <Route path="/agence" Component={Agence} />
-        <Route path="/contact" Component={Contact} />
-        <Route path="/news" Component={News} />
-        <Route Component={NotFound} />
+        <Route path="/" element={<Home />} />
+        <Route path="/agence" element={<Agence />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/addNews" element={<AddNews />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/news/:id" element={<SingleNews />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </Router>
