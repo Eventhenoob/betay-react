@@ -14,7 +14,9 @@ const CursorMask = ({ isHovered = false }: CursorMaskProps) => {
     <>
       {!isMobile && (
         <motion.div
-          className={styles["mask"] + " fixed top-0 left-0"}
+          className={
+            styles["mask"] + " fixed top-0 left-0  " + (isHovered && " z-50 ")
+          }
           animate={{
             WebkitMaskPosition: `${(x || 0) - size / 2}px ${
               (y || 0) - size / 2

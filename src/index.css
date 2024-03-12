@@ -56,3 +56,16 @@ body {
 .text-outline:hover {
   -webkit-text-stroke-color: transparent;
 }
+
+.floatingImage {
+  animation: float 3s infinite;
+}
+
+@keyframes float {
+  50% {
+    top: 50px;
+  }
+  100% {
+    top: 0;
+  }
+}

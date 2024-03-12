@@ -45,6 +45,9 @@ const NavigationContent = ({
         <li className="text-3xl hover:text-emerald-400 transition-all duration-300 text-white">
           <Link to="/contact">Contact</Link>
         </li>
+        <li className="text-3xl hover:text-emerald-400 transition-all duration-300 text-white">
+          <Link to="/news">News</Link>
+        </li>
       </ul>
     </div>
   );
