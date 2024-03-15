@@ -23,7 +23,7 @@ const ProjectBox = ({ heading, img, dir = "down" }: Props) => {
       </RevelAnimation>
       <div className="relative">
         <p className="absolute italic font-light top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl font-main uppercase opacity-0 group-[:hover]:opacity-100 transition-all duration-200">
-          check it out
+          Vérifiez cela.
         </p>
         <img
           src={`/${img}`}

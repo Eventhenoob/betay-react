@@ -121,13 +121,13 @@ const MessageForm = ({ position, setPosition }: Props) => {
                 <input
                   {...register("firstName")}
                   type="text"
-                  placeholder="First Name"
+                  placeholder="Prénom"
                   className="placeholder:text-slate-400 text-white bg-transparent outline-none border-b-[1px]  text-xl w-full md:w-1/2 border-slate-400 hover:border-green-400 active:border-green-400 focus:border-green-400 transition-all duration-300"
                 />
                 <input
                   {...register("lastName")}
                   type="text"
-                  placeholder="Last Name"
+                  placeholder="Nom de famille"
                   className="placeholder:text-slate-400 text-white bg-transparent outline-none border-b-[1px]  text-xl w-full md:w-1/2 border-slate-400 hover:border-green-400 active:border-green-400 focus:border-green-400 transition-all duration-300"
                 />
               </div>
@@ -144,10 +144,10 @@ const MessageForm = ({ position, setPosition }: Props) => {
                 onClick={() => {
                   setFormPosition("email");
                 }}
-                text="continue"
+                text="Continuer"
               />
               <ArrowButton
-                text="Exit"
+                text="Sortie"
                 direction="left"
                 onClick={() => {
                   setPosition("start");
@@ -177,7 +177,7 @@ const MessageForm = ({ position, setPosition }: Props) => {
                 <input
                   {...register("email")}
                   type="email"
-                  placeholder="Email"
+                  placeholder="E-mail"
                   className="placeholder:text-slate-400 text-white bg-transparent outline-none border-b-[1px]  text-xl w-full border-slate-400 hover:border-green-400 active:border-green-400 focus:border-green-400 transition-all duration-300"
                 />
               </div>
@@ -191,10 +191,10 @@ const MessageForm = ({ position, setPosition }: Props) => {
                 onClick={() => {
                   setFormPosition("message");
                 }}
-                text="continue"
+                text="Continuer"
               />
               <ArrowButton
-                text="move back"
+                text="Reculer"
                 direction="left"
                 onClick={() => {
                   setFormPosition((prev) => {
@@ -228,7 +228,7 @@ const MessageForm = ({ position, setPosition }: Props) => {
               <div className="w-full flex-col flex gap-10 mb-14 md:mb-32">
                 <textarea
                   {...register("message")}
-                  placeholder="enter your message here"
+                  placeholder="Entrez votre message ici."
                   className="placeholder:text-slate-400 bg-gray-900 p-3 h-28 placeholder:capitalize text-white bg-transparent outline-none border-b-[1px]  text-xl w-full border-slate-400 hover:border-green-400 active:border-green-400 focus:border-green-400 transition-all duration-300"
                 />
                 {errors.message && (
@@ -242,11 +242,11 @@ const MessageForm = ({ position, setPosition }: Props) => {
                 type="submit"
                 direction="right"
                 onClick={() => {}}
-                text="Submit"
+                text="Soumettre"
               />
 
               <ArrowButton
-                text="move back"
+                text="Reculer"
                 direction="top"
                 onClick={() => {
                   setFormPosition((prev) => {

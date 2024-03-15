@@ -21,7 +21,7 @@ const Contact = () => {
           <span className="group-[:hover]:text-red-500 transition-all duration-1000">
             C
           </span>
-          ontact Us
+          ontactez-nous.
         </h1>
 
         <div className="md:px-20 px-2 gap-10 md:gap-0 flex justify-between md:flex-row flex-col">
@@ -32,7 +32,7 @@ const Contact = () => {
               onClick={() => {
                 setPosition("form");
               }}
-              text="Get in touch"
+              text="Prenez contact."
             />
           </div>
 

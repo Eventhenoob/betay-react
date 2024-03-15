@@ -77,10 +77,10 @@ const HorizontalScrollCarouselContainer = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-60%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-70%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh] ">
+    <section ref={targetRef} className="relative h-[500vh] ">
       <div className="sticky top-0 flex h-screen items-center  overflow-hidden">
         <motion.div style={{ x }} className="flex gap-32 p-10 ">
           <ProjectBox

@@ -63,7 +63,7 @@ export default function Home() {
             <MyImageSlider />
           </div>
           <div className="flex items-center mt-20 mb-10 justify-center">
-            <PremiumButton text="Cas clients" />
+            <PremiumButton href="/clients" text="Cas clients" />
           </div>
         </section>
       </main>
