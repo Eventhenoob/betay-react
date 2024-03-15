@@ -6,7 +6,7 @@ const MyImageSlider = () => {
   const handleNextClick = () => {
     if (slideRef.current === null) return;
     let lists = slideRef.current.querySelectorAll(".item");
-    console.log(lists);
+    
     slideRef.current.appendChild(lists[0]);
   };
 

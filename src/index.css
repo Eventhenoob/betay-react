@@ -57,15 +57,21 @@ body {
   -webkit-text-stroke-color: transparent;
 }
 
-.floatingImage {
-  animation: float 3s infinite;
+.animateLogo {
+  animation: logoBlink 2s infinite;
+}
+.animateLogo:hover {
+  animation: none;
 }
 
-@keyframes float {
+@keyframes logoBlink {
+  0% {
+    opacity: 0.5;
+  }
   50% {
-    top: 50px;
+    opacity: 1;
   }
   100% {
-    top: 0;
+    opacity: 0.4;
   }
 }

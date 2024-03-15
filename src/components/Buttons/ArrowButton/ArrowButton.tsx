@@ -10,8 +10,10 @@ interface ArrowButtonProps {
   type?: "button" | "submit" | "reset";
   onClick: () => void;
   text: string;
+  isDisabled?: boolean;
 }
 const ArrowButton = ({
+  isDisabled = false,
   direction,
   onClick,
   text,
@@ -20,17 +22,17 @@ const ArrowButton = ({
   const [hover, setHover] = useState(false);
   return (
     <button
+      disabled={isDisabled}
       onMouseLeave={() => setHover(false)}
       onMouseEnter={() => setHover(true)}
       onClick={onClick}
-      className="flex text-sm gap-0 relative w-44 p-2 px-4 rounded-3xl hover:bg-black transition-all duration-500 bg-white text-black z-40 justify-center items-center "
+      className="flex text-sm gap-0 group relative w-44 p-2 px-4 rounded-3xl hover:bg-black transition-all duration-500 bg-white text-black z-40 justify-center items-center "
       type={type}
     >
       <span
         className={
-          "text-xs text-slate-400 p-2 " +
-          (hover &&
-            "bg-white   font-bold rounded-full transition-all duration-500 mr-2 text-black")
+          "text-xs text-slate-400 p-2 transition-all duration-500  " +
+          "group-[:hover]:bg-white group-[:hover]:font-bold group-[:hover]:rounded-full  group-[:hover]:mr-2 group-[:hover]:text-black"
         }
       >
         {!hover ? (

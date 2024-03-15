@@ -15,12 +15,9 @@ const VideoBG = ({ video, onLoadedData, isDarkBg }: Props) => {
     >
       <video
         onPlay={() => {
-          console.log("on Play Called");
           onLoadedData();
         }}
-        onError={(e) => {
-          console.log("Video error: ", e);
-        }}
+        onError={(_e) => {}}
         autoPlay
         preload="auto"
         muted={true}

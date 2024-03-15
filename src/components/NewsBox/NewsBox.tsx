@@ -34,7 +34,7 @@ const NewsBox = ({
       <div className="w-full h-52 relative">
         <div className="bg-white inline-block  relative z-40 p-2 rounded-br-md">
           <Link
-            to={`/news/${id}`}
+            to={`/actualites/${id}`}
             className="transition-all active:bg-gray-900 active:scale-90 duration-200 text-black flex relative z-20 hover:bg-black hover:text-white bg-white  justify-center items-center text-xs p-2 gap-1 rounded-md border-2 border-black"
           >
             read more <BsArrowRight />

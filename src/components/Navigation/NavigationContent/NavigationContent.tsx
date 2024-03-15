@@ -26,7 +26,7 @@ const NavigationContent = ({
         }
       >
         <li className="text-3xl hover:text-emerald-400 transition-all duration-300 text-white">
-          <Link to="/">Home</Link>
+          <Link to="/home">Home</Link>
         </li>
         <li className="text-3xl hover:text-emerald-400 transition-all duration-300 text-white">
           <Link to="/agence">Agence</Link>

@@ -9,6 +9,7 @@ const schema = z.object({
     .string()
     .trim()
     .min(3, { message: "Title should have min of 3 length." }),
+  key: z.string().trim().min(3, { message: "Invalid key provided." }),
   createdBy: z.string().trim().min(1, { message: "Author is required." }),
   image: z.any(),
   content: z.string(),
@@ -60,7 +61,7 @@ const AddNews = () => {
             formData.append("title", data.title);
             formData.append("createdBy", data.createdBy);
             formData.append("content", data.content);
-            formData.append("key", "andi@1313dmasd");
+            formData.append("key", data.key);
             formData.append("image", data.image[0]);
             formData.append("shortDescription", data.shortDescription);
 
@@ -71,11 +72,10 @@ const AddNews = () => {
                 toggleShowSuccess("News added successfully");
               })
               .catch((error: any) => {
-                console.log(error);
                 toggleShowError("Error adding news: " + error.message);
               });
-          } catch (error) {
-            console.log(error);
+          } catch (error: any) {
+            toggleShowError("Error adding news: " + error.message);
           }
         })}
         className="flex flex-col gap-4 w-1/2 mx-auto"
@@ -132,6 +132,19 @@ const AddNews = () => {
           {errors.content && (
             <p className="text-red-500">{errors.content?.message}</p>
           )}
+        </div>
+
+        <div className="flex flex-col gap-2">
+          <label htmlFor="key" className="">
+            key
+          </label>
+          <input
+            type="key"
+            {...register("key")}
+            className="text-black"
+            id="key"
+          />
+          {errors.key && <p className="text-red-500">{errors.key?.message}</p>}
         </div>
 
         <div className="flex flex-col gap-2">

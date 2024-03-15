@@ -84,7 +84,7 @@ const HorizontalScrollCarouselContainer = ({
               {
                 heading: "IMAGE DE MARQUE",
                 description:
-                  "Nous concevons et créons des visuels en harmonie avec les tendances actuelles et l'essence de votre marque. Cela comprend la création de votre logo, la charte graphique, le wording, les plaquettes, les mémoires techniques, les livrets d'accueil, les signatures d'e-mails et les supports de correspondance, ainsi que la personnalisation de vos réseaux sociaux.",
+                  "Nous créons des visuels en harmonie avec les tendances et l'essence de votre marque, incluant le logo, la charte graphique, le wording, les plaquettes, les mémoires techniques, les livrets d'accueil, les signatures d'e-mails, les supports de correspondance, et la personnalisation des réseaux sociaux.",
               },
               {
                 heading: "SITE WEB",

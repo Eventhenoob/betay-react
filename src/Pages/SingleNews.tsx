@@ -4,7 +4,7 @@ import useSingleNews from "../hooks/useSingleNews";
 
 const SingleNews = () => {
   const { id } = useParams();
-  console.log(id);
+
   if (id == null)
     return (
       <main className="min-w-[100vw] min-h-[100vh]  flex justify-center items-center">
@@ -25,7 +25,7 @@ const SingleNews = () => {
     </main>;
   } else {
     return (
-      <main className="min-w-[100vw] flex-col bg-white text-black p-10 min-h-[100vh] flex justify-center items-center">
+      <main className="min-w-[100vw] flex-col bg-slate-200 text-black p-10 min-h-[100vh] flex justify-center items-center">
         <img
           src={newsData?.data.image}
           alt="no image"

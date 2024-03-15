@@ -5,19 +5,42 @@ import openMindAnimation from "./../assets/openMind.json";
 import goalAnimation from "./../assets/targetAnimation.json";
 import CrewTray from "./../components/CrewTray";
 import ClientsShowcase from "./../components/ClientsShowcase";
+import { useEffect, useState } from "react";
 
 const Agence = () => {
+  const [cube, setCube] = useState(false);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setCube(true);
+    }, 100);
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <>
       <header className="w-screen overflow-hidden h-screen flex justify-center items-center">
         <div className="relative group">
-          <div className=" w-[150rem]  h-[150rem] z-10 bg-green-600 absolute origin-center -top-[40rem] -left-[10rem] scale-0 group-[:hover]:scale-100 transition-all duration-1000 group-[:hover]:rotate-0 rotate-90"></div>
+          <div
+            className={
+              " w-[150rem]  h-[150rem] z-10 bg-green-600 absolute origin-center -top-[40rem] -left-[10rem]  group-[:hover]:scale-100 transition-all duration-1000 group-[:hover]:rotate-0  " +
+              (cube && " scale-0 rotate-90")
+            }
+          ></div>
           <h1 className="relative z-30 text-5xl   md:text-[8rem] lg:text-[11rem] text-center  text-outline transition-all duration-1000 flex flex-wrap leading-[8rem] font-bold text-[#131312]">
-            <span className="group-[:hover]:text-white transition-all duration-1000">
+            <span
+              className={
+                "group-[:hover]:text-white transition-all duration-1000 " +
+                (!cube && "text-white")
+              }
+            >
               Bienvenue
             </span>
           </h1>
-          <p className="md:text-4xl -mt-10 md:mt-0 md:p-4 font-semibold  z-20 absolute left-0 group-[:hover]:text-black transition-all duration-1000">
+          <p
+            className={
+              " md:text-4xl -mt-10 md:mt-0 md:p-4 font-semibold  z-20 absolute left-0 group-[:hover]:text-black transition-all duration-1000 " +
+              (!cube && "text-black")
+            }
+          >
             hez Agence Darwin, là où l&apos;évolution de
             <br /> la communication prend vie.
           </p>
@@ -29,7 +52,7 @@ const Agence = () => {
             <h2 className="md:text-6xl font-heading relative z-10 font-extralight text-4xl px-4 md:p-0 md:w-[60%] m-auto text-center text-bold text-green-400 mb-40 md:mb-60">
               Excellence Collaborative : Élever la Communication
             </h2>
-            <div className="flex justify-evenly  gap-96 lg:gap-0 flex-wrap">
+            <div className="flex justify-evenly  gap-32 md:gap-96 lg:gap-0 flex-wrap">
               <GoalCard
                 heading="Notre Engageant Manifeste"
                 animation={openMindAnimation}
@@ -64,7 +87,7 @@ const Agence = () => {
         </section>
 
         <section className="py-40">
-          <h2 className="text-4xl relative md:text-6xl md:w-[80%] m-auto mb-20 capitalize font-extralight text-center text-green-400">
+          <h2 className="text-4xl px-4 relative md:text-6xl md:w-[80%] m-auto mb-20 capitalize font-extralight text-center text-green-400">
             Rencontrez nos experts passionnés pour une communication digitale
             complète.
           </h2>

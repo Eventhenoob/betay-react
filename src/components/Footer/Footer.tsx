@@ -47,7 +47,7 @@ const Footer = () => {
         className="ball bg-gray-200 z-50 absolute top-0 right-0 opacity-70 w-10 h-10 rounded-full"
       ></div> */}
       <div className="">
-        <Link to="/" className="relative z-50 text-4xl font-bold">
+        <Link to="/home" className="relative z-50 text-4xl font-bold">
           <img src="/logo.png" alt="" className="h-20" />
         </Link>
         <p className="text-4xl mt-7 text-outline text-gray-900 font-bold">
