@@ -12,6 +12,7 @@ import SingleNews from "./Pages/SingleNews"; // Import the component for single 
 import AddNews from "./Pages/AddNews";
 import Client from "./Pages/Client";
 import Initial from "./Pages/Initial";
+import Expertises from "./Pages/Expertises";
 
 const App: React.FC = () => {
   return (
@@ -26,6 +27,7 @@ const App: React.FC = () => {
         <Route path="/actualites" element={<News />} />
         <Route path="/actualites/:id" element={<SingleNews />} />
         <Route path="/clients" element={<Client />} />
+        <Route path="/expertises" element={<Expertises />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

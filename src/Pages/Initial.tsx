@@ -6,7 +6,7 @@ const Initial = () => {
   return (
     <Link
       to={isEnded ? "/home" : "/"}
-      className="flex flex-col justify-center items-center bg-black w-screen h-screen"
+      className="flex flex-col justify-center items-center bg-white w-screen h-screen"
     >
       <video
         onEnded={() => {
