@@ -23,7 +23,7 @@
 
 .mask {
   pointer-events: none;
-  mask-image: url("./mask.svg");
+  mask-image: url("../../../public/mask.svg");
   mask-repeat: no-repeat;
   mask-size: 40px;
   mix-blend-mode: difference;
