@@ -70,7 +70,7 @@ const HorizontalScrollCarouselContainer = ({
               {
                 heading: "ENGAGEMENT SUR LE RESULTAT",
                 description:
-                  "Nous nous engageons à optimiser le trafic vers votre site web, à augmenter la génération de prospects et à renforcer la notoriété de votre marque.",
+                  "Nous nous engageons à booster votre trafic web, à générer plus de prospects et à renforcer votre marque.",
               },
             ]}
           />
@@ -84,7 +84,7 @@ const HorizontalScrollCarouselContainer = ({
               {
                 heading: "IMAGE DE MARQUE",
                 description:
-                  "Nous créons des visuels en harmonie avec les tendances et l'essence de votre marque, incluant le logo, la charte graphique, le wording, les plaquettes, les mémoires techniques, les livrets d'accueil, les signatures d'e-mails, les supports de correspondance, et la personnalisation des réseaux sociaux.",
+                  "Nous créons des visuels correspondant à votre marque, incluant logo, charte graphique, wording, plaquettes, mémoires techniques, livrets d'accueil, signatures d'e-mails, supports de correspondance et personnalisation des réseaux sociaux.",
               },
               {
                 heading: "SITE WEB",
@@ -94,7 +94,7 @@ const HorizontalScrollCarouselContainer = ({
               {
                 heading: "PRODUCTION VISUELLE ",
                 description:
-                  "Des séances photo, des vidéos d'entreprise, du motion design... Notre équipe répond à tous vos besoins en matière de contenu visuel.",
+                  "Des séances photo, vidéos d'entreprise, motion design... Notre équipe répond à tous vos besoins en contenu visuel.",
               },
             ]}
           />

@@ -31,7 +31,7 @@ const HorizontalScrollCard = ({
           className="z-10 bg-red-500 w-full h-full absolute top-0 left-0 md:object-cover object-fill"
         />
       </div>
-      <div className="md:w-1/2 p-10 gap-10 flex overflow-y-scroll md:overflow-auto justify-center flex-col">
+      <div className="md:w-1/2 p-4 gap-2 pt-10 md:p-10 md:gap-10 flex overflow-y-scroll md:overflow-auto justify-center flex-col">
         {subText.map((subData, i) => (
           <RevelAnimation key={i} width="fit-content">
             <div className="w-full flex flex-col justify-start">

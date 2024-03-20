@@ -18,7 +18,7 @@ const Initial = () => {
         autoPlay
         muted
       />
-      <div className="top-[54%] md:top-2/3 text-2xl md:text-4xl absolute">
+      <div className="top-[62%] sm:top-[54%] md:top-2/3 text-2xl md:text-4xl absolute">
         <p
           className={
             " transition-all duration-500 text-black p-4 text-center font-heading " +
