@@ -1,8 +1,6 @@
 import GoalCard from "./../components/GoalCard";
 import ImageSlider from "./../components/ImageSlider";
 
-import openMindAnimation from "./../assets/openMind.json";
-import goalAnimation from "./../assets/targetAnimation.json";
 import CrewTray from "./../components/CrewTray";
 import ClientsShowcase from "./../components/ClientsShowcase";
 import { useEffect, useState } from "react";
