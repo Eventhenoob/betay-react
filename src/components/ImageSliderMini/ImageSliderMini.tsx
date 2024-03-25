@@ -14,7 +14,7 @@ const ImageSliderMini = ({
     <div
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="w-[80%] rounded-3xl  m-auto lg:w-full overflow-hidden h-[25rem]  lg:h-[35rem] bg-red-300"
+      className="w-[80%] rounded-3xl  m-auto lg:w-full overflow-hidden h-[25rem]  lg:h-[35rem] bg-[#EF7238]"
     >
       {SimpleSlider(images)}
     </div>

@@ -34,7 +34,7 @@ const Expertises = () => {
             <h3
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
-              className="text-4xl text-green-400"
+              className="text-4xl text-[#EF7238]"
             >
               Stratégie de communication
             </h3>
@@ -82,7 +82,7 @@ const Expertises = () => {
             <h3
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
-              className="text-4xl text-green-400"
+              className="text-4xl text-[#EF7238]"
             >
               Création graphique
             </h3>

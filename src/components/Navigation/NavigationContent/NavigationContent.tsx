@@ -25,24 +25,24 @@ const NavigationContent = ({
           (isActive && "opacity-100")
         }
       >
-        <li className="text-3xl hover:text-emerald-400 transition-all duration-300 text-white">
+        <li className="text-3xl hover:text-[#EF7238] transition-all duration-300 text-white">
           <Link to="/home">Home</Link>
         </li>
-        <li className="text-3xl hover:text-emerald-400 transition-all duration-300 text-white">
+        <li className="text-3xl hover:text-[#EF7238] transition-all duration-300 text-white">
           <Link to="/agence">Agence</Link>
         </li>
-        <li className="text-3xl hover:text-emerald-400 transition-all duration-300 text-white">
+        <li className="text-3xl hover:text-[#EF7238] transition-all duration-300 text-white">
           <Link to="/expertises">Expertise</Link>
         </li>
 
-        <li className="text-3xl hover:text-emerald-400 transition-all duration-300 text-white">
+        <li className="text-3xl hover:text-[#EF7238] transition-all duration-300 text-white">
           <Link to="/clients">Cas clients</Link>
         </li>
 
-        <li className="text-3xl hover:text-emerald-400 transition-all duration-300 text-white">
+        <li className="text-3xl hover:text-[#EF7238] transition-all duration-300 text-white">
           <Link to="/actualites">Actualités</Link>
         </li>
-        <li className="text-3xl hover:text-emerald-400 transition-all duration-300 text-white">
+        <li className="text-3xl hover:text-[#EF7238] transition-all duration-300 text-white">
           <Link to="/contact">Contact</Link>
         </li>
       </ul>

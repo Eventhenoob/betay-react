@@ -1,10 +1,9 @@
 "use client";
-import Lottie from "lottie-react";
 import style from "./style.module.css";
 interface Props {
   heading: string;
   description: string;
-  animation: any;
+  animation: string;
 }
 
 const GoalCard = ({ animation, description, heading }: Props) => {
@@ -15,9 +14,9 @@ const GoalCard = ({ animation, description, heading }: Props) => {
         style["card"]
       }
     >
-      <Lottie className="w-1/2 -mt-28" animationData={animation} />
+      <img className="w-1/2 h-auto -mt-28" src={animation} />
       <div className=" p-4">
-        <h3 className="font-bold text-green-400 text-xl sm:text-2xl md:text-4xl mb-2 ">
+        <h3 className="font-bold text-[#EF7238] text-xl sm:text-2xl md:text-4xl mb-2 ">
           {heading}
         </h3>
         <p className="md:text-xl mt-1 md:mt-7 leading-8">{description}</p>

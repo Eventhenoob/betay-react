@@ -1,11 +1,7 @@
 "use client";
 import AutoChangeableText from "./../components/AutoChangeableTex";
-import Outline from "./../components/Buttons/Outline";
-import RainbowHover from "./..//components/Buttons/RanibowHover/RainbowHover";
 import HorizontalScrollCarousel from "./..//components/HorizontalScrollCarousel";
-import RevelAnimation from "./..//components/RevelAnimation";
 import VideoBG from "./..//components/VideoBG";
-
 import CursorMask from "../components/CursorMark/CursorMask";
 import { useState } from "react";
 import MyImageSlider from "../components/MyImageSlider/MyImageSlider";
@@ -13,6 +9,8 @@ import PremiumButton from "../components/Buttons/PermiumButton";
 
 export default function Home() {
   const [isHovered, setIsHovered] = useState(false);
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+
   const enableHover = () => {
     setIsHovered(true);
   };
@@ -24,10 +22,16 @@ export default function Home() {
     <>
       <CursorMask isHovered={isHovered} />
       <header className="flex h-max md:h-screen min-h-screen w-screen flex-col items-center relative justify-center p-5 pt-32  md:p-24">
-        <VideoBG video="header.mp4" isDarkBg={true} onLoadedData={() => {}} />
+        <VideoBG
+          video="header.mp4"
+          isDarkBg={true}
+          onLoadedData={() => {
+            setIsVideoLoaded(true);
+          }}
+        />
         <div className="absolute top-0 left-0 flex h-screen w-screen flex-col items-center justify-center p-5 pt-32  md:p-24">
           <div className="content w-full lg:w-2/3  text-center">
-            <RevelAnimation width="fit-content">
+            {/* <RevelAnimation width="fit-content">
               <h1
                 onMouseEnter={enableHover}
                 onMouseLeave={disableHover}
@@ -35,18 +39,28 @@ export default function Home() {
               >
                 DARWIN!
               </h1>
-            </RevelAnimation>
-            <AutoChangeableText
-              onMouseEnter={enableHover}
-              onMouseLeave={disableHover}
-              textArray={[
-                "votre agence en marketing digital, accompagne les entreprises de toutes tailles et de tous secteurs grâce à son expertise en acquisition et création. Nos consultants web passionnés conçoivent et mettent en œuvre votre stratégie digitale avec pour objectif la performance et la rentabilité. Nous vous accompagnons dans la réalisation de vos objectifs de visibilité et d'expansion à travers des stratégies numériques innovantes et sur mesure.",
-              ]}
-            />
-            <div className="cta flex gap-2  md:gap-10 justify-center items-center  md:mt-[16rem] mb-10 mt-[20rem] xl:mt-[16rem] lg:mt-[19rem]">
+            </RevelAnimation> */}
+            {isVideoLoaded && (
+              <AutoChangeableText
+                onMouseEnter={enableHover}
+                onMouseLeave={disableHover}
+                timings={[2.5, 2.9, 2, 3, 5.1, 2, 3, 1]}
+                textArray={[
+                  "Nous Sommes Des Passionnes",
+                  "Nous Sommes Creatifs",
+                  "Referencement seo",
+                  "Creation de sites internet",
+                  "Communication digital",
+                  "Acquisition de leads",
+                  "Image de marque et reputation",
+                  "Nous Sommes Des Passionnes",
+                ]}
+              />
+            )}
+            {/* <div className="cta flex gap-2  md:gap-10 justify-center items-center  md:mt-[16rem] mb-10 mt-[20rem] xl:mt-[16rem] lg:mt-[19rem]">
               <RainbowHover text="Nos expertises et" />
               <Outline text="Nous découvrir" />
-            </div>
+            </div> */}
           </div>
         </div>
       </header>

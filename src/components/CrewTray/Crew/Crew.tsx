@@ -20,7 +20,7 @@ const Crew = ({ bigImage, name, smallImage, post }: Props) => {
           className="w-64 h-64 group-[:hover]:opacity-100 opacity-0 transition-all duration-[1.2s] rounded-full object-cover"
         />
         <div className="">
-          <p className="text-green-400 text-center text-2xl">{name}</p>
+          <p className="text-[#EF7238] text-center text-2xl">{name}</p>
           <p className=" text-center">{post}</p>
         </div>
       </div>

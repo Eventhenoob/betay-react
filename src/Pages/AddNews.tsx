@@ -50,7 +50,7 @@ const AddNews = () => {
         </p>
       )}
       {showSuccess && (
-        <p className="bg-green-600 p-4 fixed w-screen top-20 left-1 z-30 text-white font-heading ">
+        <p className="bg-[#EF7238] p-4 fixed w-screen top-20 left-1 z-30 text-white font-heading ">
           {showSuccess}
         </p>
       )}

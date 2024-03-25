@@ -16,7 +16,7 @@ const ProjectBox = ({ heading, img, dir = "down" }: Props) => {
     >
       <RevelAnimation width="fit-content">
         <div className="w-full text-start">
-          <h3 className="group-[:hover]:text-green-400 duration-300 text-3xl font-heading font-bold">
+          <h3 className="group-[:hover]:text-[#EF7238] duration-300 text-3xl font-heading font-bold">
             {heading}
           </h3>
         </div>

@@ -21,7 +21,7 @@ const Agence = () => {
         <div className="relative group">
           <div
             className={
-              " w-[150rem]  h-[150rem] z-10 bg-green-600 absolute origin-center -top-[40rem] -left-[10rem]  group-[:hover]:scale-100 transition-all duration-1000 group-[:hover]:rotate-0  " +
+              " w-[150rem]  h-[150rem] z-10 bg-[#EF7238] absolute origin-center -top-[40rem] -left-[10rem]  group-[:hover]:scale-100 transition-all duration-1000 group-[:hover]:rotate-0  " +
               (cube && " scale-0 rotate-90")
             }
           ></div>
@@ -49,19 +49,19 @@ const Agence = () => {
       <main className="overflow-hidden min-h-screen w-full ">
         <section className="pt-80 relative">
           <div className="relative z-50">
-            <h2 className="md:text-6xl font-heading relative z-10 font-extralight text-4xl px-4 md:p-0 md:w-[60%] m-auto text-center text-bold text-green-400 mb-40 md:mb-60">
+            <h2 className="md:text-6xl font-heading relative z-10 font-extralight text-4xl px-4 md:p-0 md:w-[60%] m-auto text-center text-bold text-[#EF7238] mb-40 md:mb-60">
               Excellence Collaborative : Élever la Communication
             </h2>
             <div className="flex justify-evenly  gap-32 md:gap-96 lg:gap-0 flex-wrap">
               <GoalCard
                 heading="Notre Engageant Manifeste"
-                animation={openMindAnimation}
+                animation={"/rocket.png"}
                 description="Chez Agence Darwin, nous croyons en la collaboration transparente, l'adaptabilité et la recherche constante de l'excellence. Notre approche personnalisée garantit que chaque client bénéficie d'une solution sur mesure pour évoluer avec succès dans le monde numérique en constante évolution"
               />
 
               <GoalCard
                 heading="Collaboration Distinguée pour une Évolution Réussie"
-                animation={goalAnimation}
+                animation={"/target.png"}
                 description="Votre réussite est notre priorité. Nous travaillons main dans la main avec nos clients, comprenant leurs besoins uniques pour créer des solutions qui vont au-delà des attentes et stimulent une véritable évolution dans leur communication"
               />
             </div>
@@ -69,7 +69,7 @@ const Agence = () => {
         </section>
         <section className="py-20">
           <div className="p-4  md:p-20">
-            <h2 className="text-6xl z-10 text-center font-heading mb-6 relative text-green-400">
+            <h2 className="text-6xl z-10 text-center font-heading mb-6 relative text-[#EF7238]">
               L&apos;agence
             </h2>
             <p className="relative text-xl">
@@ -87,7 +87,7 @@ const Agence = () => {
         </section>
 
         <section className="py-40">
-          <h2 className="text-4xl px-4 relative md:text-6xl md:w-[80%] m-auto mb-20 capitalize font-extralight text-center text-green-400">
+          <h2 className="text-4xl px-4 relative md:text-6xl md:w-[80%] m-auto mb-20 capitalize font-extralight text-center text-[#EF7238]">
             Rencontrez nos experts passionnés pour une communication digitale
             complète.
           </h2>
@@ -95,7 +95,7 @@ const Agence = () => {
         </section>
 
         <section className="py-5 pb-40">
-          <h2 className="text-6xl relative mb-20 font-extralight  capitalize text-center text-green-400">
+          <h2 className="text-6xl relative mb-20 font-extralight  capitalize text-center text-[#EF7238]">
             Nos Clients
           </h2>
           <ClientsShowcase />

@@ -58,7 +58,7 @@ const Footer = () => {
       <div className="mt-10 flex items-center relative z-50 gap-3 ">
         <div className="w-20 h-[1px] bg-slate-50"></div>
         <a
-          className="text-xl transition-all duration-300 hover:text-green-400 font-bold"
+          className="text-xl transition-all duration-300 hover:text-[#EF7238] font-bold"
           href="tel:0185121850"
         >
           0185121850
@@ -72,12 +72,12 @@ const Footer = () => {
           <input
             type="email"
             placeholder="votre adresse email"
-            className=" italic rounded-lg border-white border-2 p-2 md:p-4 bg-transparent outline-none text-green-400"
+            className=" italic rounded-lg border-white border-2 p-2 md:p-4 bg-transparent outline-none text-[#EF7238]"
             required={true}
           />
           <button
             type="submit"
-            className="bg-green-400 hover:bg-green-600 transition-all duration-200 rounded-lg px-4 py-2 text-black font-bold"
+            className="bg-[#EF7238] hover:bg-[#c85f2e] transition-all duration-200 rounded-lg px-4 py-2 text-black font-bold"
           >
             s&apos;inscrire
           </button>
