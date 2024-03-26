@@ -1,8 +1,15 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 const Initial = () => {
   const [isEnded, setIsEnded] = useState(false);
+  const navigate = useNavigate();
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      navigate("/home");
+    }, 14000);
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <Link
       to={isEnded ? "/home" : "/"}
@@ -34,7 +41,7 @@ const Initial = () => {
             (isEnded ? " opacity-100 " : " opacity-0 ")
           }
         >
-          Cliquez sur
+          Click here
         </p>
       </div>
     </Link>

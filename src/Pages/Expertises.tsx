@@ -19,16 +19,17 @@ const Expertises = () => {
       <CursorMask isHovered={isHovered} />
 
       <main className="w-full text-center lg:text-left lg:px-40 pt-48 flex flex-col  min-h-screen overflow-x-hidden">
-        <AnimationOnHover
-          lottieElement={<Lottie animationData={nosExperties} />}
+        <h1
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          className="text-5xl lg:text-7xl  font-heading  "
         >
-          <h1 className="text-5xl lg:text-7xl  font-heading  ">
-            <span className="inline-block border-b-2 border-b-green-400 ">
-              Nos
-            </span>{" "}
-            expertises
-          </h1>
-        </AnimationOnHover>
+          <span className="inline-block border-b-2 border-b-[#EF7238] ">
+            Nos
+          </span>{" "}
+          expertises
+        </h1>
+
         <section className="mt-10  mb-40 flex  flex-wrap justify-between items-center">
           <div className="text-xl p-4 lg:pr-16 flex gap-4 flex-col lg:w-3/6">
             <h3
