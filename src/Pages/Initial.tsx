@@ -25,7 +25,7 @@ const Initial = () => {
         autoPlay
         muted
       />
-      <div className="top-[62%] sm:top-[54%] md:top-2/3 text-2xl md:text-4xl absolute">
+      <div className="top-[62%] flex  justify-center items-center flex-col sm:top-[54%] md:top-2/3 text-2xl md:text-4xl absolute">
         <p
           className={
             " transition-all duration-500 text-black p-4 text-center font-heading " +
@@ -37,11 +37,11 @@ const Initial = () => {
         </p>
         <p
           className={
-            " transition-all duration-[1.5s] ease-in text-black p-4 text-center font-heading " +
+            " rounded-lg transition-all inline-block duration-[1.5s] ease-in  bg-black text-white p-4 text-center font-heading " +
             (isEnded ? " opacity-100 " : " opacity-0 ")
           }
         >
-          Click here
+          cliquez ici
         </p>
       </div>
     </Link>

@@ -1,6 +1,3 @@
-import AnimationOnHover from "../components/AnimationOnHover";
-import nosExperties from "../assets/nosExperties.json";
-import Lottie from "lottie-react";
 import ImageSliderMini from "../components/ImageSliderMini/ImageSliderMini";
 import CursorMask from "../components/CursorMark/CursorMask";
 import { useState } from "react";
