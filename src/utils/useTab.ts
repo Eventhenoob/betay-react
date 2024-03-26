@@ -5,7 +5,8 @@ export default function useTab() {
 
   useEffect(() => {
     const checkMobile = () => {
-      setIsTab(window.innerWidth <= 1071);
+      console.log(window.innerWidth <= 978);
+      setIsTab(window.innerWidth <= 978);
     };
     checkMobile();
     window.addEventListener("resize", checkMobile);
