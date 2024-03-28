@@ -2,26 +2,26 @@
 import AutoChangeableText from "./../components/AutoChangeableTex";
 import HorizontalScrollCarousel from "./..//components/HorizontalScrollCarousel";
 import VideoBG from "./..//components/VideoBG";
-import CursorMask from "../components/CursorMark/CursorMask";
+// import CursorMask from "../components/CursorMark/CursorMask";
 import { useState } from "react";
 import MyImageSlider from "../components/MyImageSlider/MyImageSlider";
 import PremiumButton from "../components/Buttons/PermiumButton";
 import useTab from "../utils/useTab";
 
 export default function Home() {
-  const [isHovered, setIsHovered] = useState(false);
+  // const [isHovered, setIsHovered] = useState(false);
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   const isTab = useTab();
   const enableHover = () => {
-    setIsHovered(true);
+    // setIsHovered(true);
   };
   const disableHover = () => {
-    setIsHovered(false);
+    // setIsHovered(false);
   };
 
   return (
     <>
-      <CursorMask isHovered={isHovered} />
+      {/* <CursorMask isHovered={isHovered} /> */}
       <header className="flex h-max md:h-screen min-h-screen w-screen flex-col items-center relative justify-center p-5 pt-32  md:p-24">
         <VideoBG
           video={isTab ? "header.mp4" : "headerWithText.mp4"}

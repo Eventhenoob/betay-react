@@ -37,7 +37,7 @@ const Initial = () => {
         </p>
         <p
           className={
-            " rounded-lg transition-all inline-block duration-[1.5s] ease-in  bg-black text-white p-4 text-center font-heading " +
+            " rounded-lg transition-all inline-block duration-[1.5s] ease-in bg-opacity-30 bg-black text-white p-4 text-center font-heading " +
             (isEnded ? " opacity-100 " : " opacity-0 ")
           }
         >

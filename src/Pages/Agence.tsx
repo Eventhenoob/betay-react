@@ -27,7 +27,7 @@ const Agence = () => {
             <span
               className={
                 "group-[:hover]:text-white transition-all duration-1000 " +
-                (!cube && "text-white")
+                "text-white"
               }
             >
               Bienvenue

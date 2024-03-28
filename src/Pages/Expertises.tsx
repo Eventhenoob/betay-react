@@ -1,19 +1,19 @@
 import ImageSliderMini from "../components/ImageSliderMini/ImageSliderMini";
-import CursorMask from "../components/CursorMark/CursorMask";
-import { useState } from "react";
+// import CursorMask from "../components/CursorMark/CursorMask";
+// import { useState } from "react";
 import SkillsTray from "../components/SkillsTray";
 import WorkTray from "../components/WorkTray";
 const Expertises = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  // const [isHovered, setIsHovered] = useState(false);
   const handleMouseEnter = () => {
-    setIsHovered(true);
+    // setIsHovered(true);
   };
   const handleMouseLeave = () => {
-    setIsHovered(false);
+    // setIsHovered(false);
   };
   return (
     <>
-      <CursorMask isHovered={isHovered} />
+      {/* <CursorMask isHovered={isHovered} /> */}
 
       <main className="w-full text-center lg:text-left lg:px-40 pt-48 flex flex-col  min-h-screen overflow-x-hidden">
         <h1

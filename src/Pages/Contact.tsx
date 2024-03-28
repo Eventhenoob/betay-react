@@ -18,7 +18,7 @@ const Contact = () => {
         />
 
         <h1 className="text-6xl group transition-all duration-300 hover:scale-105  md:text-9xl text-center  text-slate-100 font-light italic ">
-          <span className="group-[:hover]:text-red-500 transition-all duration-1000">
+          <span className="group-[:hover]:text-[#EF7238] transition-all duration-1000">
             C
           </span>
           ontactez-nous.

@@ -56,74 +56,38 @@ const CrewTray = () => {
       >
         <Crew
           bigImage="e1.jpeg"
-          name="Even"
-          post="Web Developer"
+          name="Dov A"
+          post="Chef de projet"
           smallImage="e1.jpeg"
         />
         <Crew
           bigImage="e1.jpeg"
-          name="Even"
-          post="Web Developer"
+          name="Sojivanan M."
+          post="Expert digital"
           smallImage="e1.jpeg"
         />
         <Crew
           bigImage="e1.jpeg"
-          name="Even"
-          post="Web Developer"
+          name="Tayebi M."
+          post="Responsable éditorial"
           smallImage="e1.jpeg"
         />
         <Crew
           bigImage="e1.jpeg"
-          name="Even"
-          post="Web Developer"
+          name="Emmanuel V."
+          post="Développeur web"
           smallImage="e1.jpeg"
         />
         <Crew
           bigImage="e1.jpeg"
-          name="Even"
-          post="Web Developer"
+          name="Sedi Y"
+          post="Community manager"
           smallImage="e1.jpeg"
         />
         <Crew
           bigImage="e1.jpeg"
-          name="Even"
-          post="Web Developer"
-          smallImage="e1.jpeg"
-        />
-        <Crew
-          bigImage="e1.jpeg"
-          name="Even"
-          post="Web Developer"
-          smallImage="e1.jpeg"
-        />
-        <Crew
-          bigImage="e1.jpeg"
-          name="Even"
-          post="Web Developer"
-          smallImage="e1.jpeg"
-        />
-        <Crew
-          bigImage="e1.jpeg"
-          name="Even"
-          post="Web Developer"
-          smallImage="e1.jpeg"
-        />
-        <Crew
-          bigImage="e1.jpeg"
-          name="Even"
-          post="Web Developer"
-          smallImage="e1.jpeg"
-        />
-        <Crew
-          bigImage="e1.jpeg"
-          name="Even"
-          post="Web Developer"
-          smallImage="e1.jpeg"
-        />
-        <Crew
-          bigImage="e1.jpeg"
-          name="Even"
-          post="Web Developer"
+          name="Alain-Samson D."
+          post="Motion designer"
           smallImage="e1.jpeg"
         />
       </Slider>
