@@ -37,38 +37,33 @@ const MyImageSlider = () => {
       <div ref={slideRef} className={style["slide"]}>
         <div
           className={"item  " + style["item"]}
-          style={{ backgroundImage: "url(e1.jpeg)" }}
+          style={{ backgroundImage: "url(aspenGlass.jpg)" }}
         ></div>
         <div
           className={"item  " + style["item"]}
-          style={{ backgroundImage: "url(e1.jpeg)" }}
+          style={{ backgroundImage: "url(aspenWall.jpg)" }}
         >
           <div className={style["content"]}></div>
         </div>
         <div
           className={"item  " + style["item"]}
-          style={{ backgroundImage: "url(e1.jpeg)" }}
+          style={{ backgroundImage: "url(darwinTshirts.jpg)" }}
         >
           <div className={style["content"]}></div>
         </div>
         <div
           className={"item  " + style["item"]}
-          style={{ backgroundImage: "url(e1.jpeg)" }}
+          style={{ backgroundImage: "url(mugTemplate.jpg)" }}
         >
           <div className={style["content"]}></div>
         </div>
         <div
           className={"item  " + style["item"]}
-          style={{ backgroundImage: "url(e1.jpeg)" }}
+          style={{ backgroundImage: "url(tShirt.jpg)" }}
         >
           <div className={style["content"]}></div>
         </div>
-        <div
-          className={"item " + style["item"]}
-          style={{ backgroundImage: "url(e1.jpeg)" }}
-        >
-          <div className={style["content"]}></div>
-        </div>
+       
       </div>
       <div className={style["buttons"] + " flex gap-3"}>
         <button onClick={() => handlePrevClick()} id="prev">
