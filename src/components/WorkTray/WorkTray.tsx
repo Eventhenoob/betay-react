@@ -6,7 +6,11 @@ const WorkTray = () => {
         className="h-96 hover:scale-110 transition-all duration-300 w-80 rounded-lg overflow-hidden shrink-0 bg-slate-950"
       >
         <div className="h-1/2 w-full">
-          <img src="/e1.jpeg" alt="" className="w-full h-full object-cover" />
+          <img
+            src="/aspenGlass.jpg"
+            alt=""
+            className="w-full h-full object-cover"
+          />
           <div className="p-2">
             <h4 className="text-3xl font-heading mb-2 ">My mongose</h4>
 
@@ -26,7 +30,11 @@ const WorkTray = () => {
         className="h-96 hover:scale-110 transition-all duration-300 w-80 rounded-lg overflow-hidden shrink-0 bg-slate-950"
       >
         <div className="h-1/2 w-full">
-          <img src="/e1.jpeg" alt="" className="w-full h-full object-cover" />
+          <img
+            src="/mugTemplate.jpg"
+            alt=""
+            className="w-full h-full object-cover"
+          />
           <div className="p-2">
             <h4 className="text-3xl font-heading mb-2 ">My mongose</h4>
 
@@ -46,7 +54,11 @@ const WorkTray = () => {
         className="h-96 hover:scale-110 transition-all duration-300 w-80 rounded-lg overflow-hidden shrink-0 bg-slate-950"
       >
         <div className="h-1/2 w-full">
-          <img src="/e1.jpeg" alt="" className="w-full h-full object-cover" />
+          <img
+            src="/darwinTshirts.jpg"
+            alt=""
+            className="w-full h-full object-cover"
+          />
           <div className="p-2">
             <h4 className="text-3xl font-heading mb-2 ">My mongose</h4>
 
@@ -66,7 +78,11 @@ const WorkTray = () => {
         className="h-96 hover:scale-110 transition-all duration-300 w-80 rounded-lg overflow-hidden shrink-0 bg-slate-950"
       >
         <div className="h-1/2 w-full">
-          <img src="/e1.jpeg" alt="" className="w-full h-full object-cover" />
+          <img
+            src="/tShirt.jpg"
+            alt=""
+            className="w-full h-full object-cover"
+          />
           <div className="p-2">
             <h4 className="text-3xl font-heading mb-2 ">My mongose</h4>
 

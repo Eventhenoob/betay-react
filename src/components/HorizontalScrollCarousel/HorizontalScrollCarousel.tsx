@@ -106,7 +106,7 @@ const HorizontalScrollCarouselContainer = ({
             mainTitle="Community Management"
             subText={[
               {
-                heading: "STRATÉGIE DE CONTENU",
+                heading: "Stratégie de contenus",
                 description:
                   "Une offre personnalisée pour répondre à vos objectifs de conquête et de recrutement : chaque semaine, nous créons du contenu pour votre site web et vos réseaux sociaux, tout en assurant la gestion de votre e-réputation.",
               },

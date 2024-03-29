@@ -36,8 +36,8 @@ const HorizontalScrollCarousel = ({ onMouseEnter, onMouseLeave }: Props) => {
         <Link className="text-blue-400" to="/">
           Darwin
         </Link>{" "}
-        en Essonne se distingue par son expertise dans la création de stratégies
-        de communication novatrices destinées aux entreprises.{" "}
+        se distingue par son expertise dans la création de stratégies de
+        communication novatrices destinées aux entreprises.{" "}
       </p>
 
       <p className="mb-10 w-[80%] text-xl md:text-3xl  m-auto">
@@ -83,34 +83,11 @@ const HorizontalScrollCarouselContainer = () => {
     <section ref={targetRef} className="relative h-[500vh] ">
       <div className="sticky top-0 flex h-screen items-center  overflow-hidden">
         <motion.div style={{ x }} className="flex gap-32 p-10 ">
-          <ProjectBox
-            dir="up"
-            heading="This is the best website i have created"
-            img="e4.jpg"
-          />
-          <ProjectBox
-            heading="This is the best website i have created"
-            img="e4.jpg"
-          />
-          <ProjectBox
-            dir="up"
-            heading="This is the best website i have created"
-            img="e4.jpg"
-          />
-          <ProjectBox
-            heading="This is the best website i have created"
-            img="e4.jpg"
-          />
-          <ProjectBox
-            dir="up"
-            heading="This is the best website i have created"
-            img="e4.jpg"
-          />
-          <ProjectBox
-            dir="up"
-            heading="This is the best website i have created"
-            img="e4.jpg"
-          />
+          <ProjectBox dir="up" heading="Custom Mugs" img="mugTemplate.jpg" />
+          <ProjectBox heading="t-shirt design" img="tShirt.jpg" />
+          <ProjectBox dir="up" heading="Aspen Glass" img="aspenGlass.jpg" />
+          <ProjectBox heading="darwin Tshirts" img="darwinTshirts.jpg" />
+          <ProjectBox dir="up" heading="Aspen logo wall" img="aspenWall.jpg" />
         </motion.div>
       </div>
     </section>

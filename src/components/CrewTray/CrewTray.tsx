@@ -55,40 +55,40 @@ const CrewTray = () => {
         className=" relative "
       >
         <Crew
-          bigImage="e1.jpeg"
+          bigImage="Dov.jpeg"
           name="Dov A"
           post="Chef de projet"
-          smallImage="e1.jpeg"
+          smallImage="Dov.jpeg"
         />
         <Crew
-          bigImage="e1.jpeg"
+          bigImage="Soji.png"
           name="Sojivanan M."
           post="Expert digital"
-          smallImage="e1.jpeg"
+          smallImage="Soji.png"
         />
         <Crew
-          bigImage="e1.jpeg"
+          bigImage="Taye.png"
           name="Tayebi M."
           post="Responsable éditorial"
-          smallImage="e1.jpeg"
+          smallImage="Taye.png"
         />
         <Crew
-          bigImage="e1.jpeg"
+          bigImage="Manu .png"
           name="Emmanuel V."
           post="Développeur web"
-          smallImage="e1.jpeg"
+          smallImage="Manu .png"
         />
         <Crew
-          bigImage="e1.jpeg"
+          bigImage="Sedi.png"
           name="Sedi Y"
           post="Community manager"
-          smallImage="e1.jpeg"
+          smallImage="Sedi.png"
         />
         <Crew
-          bigImage="e1.jpeg"
+          bigImage="Alain.png"
           name="Alain-Samson D."
           post="Motion designer"
-          smallImage="e1.jpeg"
+          smallImage="Alain.png"
         />
       </Slider>
 

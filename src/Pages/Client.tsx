@@ -14,7 +14,7 @@ const Client = () => {
           // onMouseLeave={() => setIsHovered(false)}
           className="text-4xl  md:text-5xl lg:text-7xl text-center font-thin"
         >
-          Lagence créative experte en design graphique
+          DARWIN, experte en design graphique
         </h1>
         <VideoBG
           isDarkBg={true}

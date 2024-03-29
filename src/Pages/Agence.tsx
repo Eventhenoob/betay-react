@@ -39,8 +39,8 @@ const Agence = () => {
               (!cube && "text-black")
             }
           >
-            hez Agence Darwin, là où l&apos;évolution de
-            <br /> la communication prend vie.
+            DARWIN,
+            <br /> l’évolution de la communication.
           </p>
         </div>
       </header>
