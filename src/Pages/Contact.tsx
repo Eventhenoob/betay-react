@@ -40,9 +40,9 @@ const Contact = () => {
             <h3 className="mb-4  text-slate-300">Contacter directement</h3>
             <a
               className="flex text-sm gap-0 relative w-44 p-2 px-4 rounded-3xl hover:text-white hover:bg-black transition-all duration-500 bg-white text-black z-40 justify-center items-center "
-              href="email:helo@gmail.com"
+              href="mailto:contact@betaye.fr"
             >
-              helo@gmail.com
+              contact@betaye.fr
             </a>
           </div>
         </div>
