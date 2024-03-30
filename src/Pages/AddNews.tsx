@@ -66,7 +66,7 @@ const AddNews = () => {
             formData.append("shortDescription", data.shortDescription);
 
             axios
-              .post("http://localhost:3010/news", formData)
+              .post("http://91.108.113.110:3010/news", formData)
 
               .then((_res) => {
                 toggleShowSuccess("News added successfully");
