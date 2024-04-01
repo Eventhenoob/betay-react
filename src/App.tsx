@@ -30,7 +30,7 @@ const ScrollToTop: React.FC = () => {
 };
 
 const App: React.FC = () => {
-  return (
+return (
     <Router>
       <ScrollToTop />
       <Navigation />
