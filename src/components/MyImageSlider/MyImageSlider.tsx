@@ -6,7 +6,7 @@ const MyImageSlider = () => {
   const handleNextClick = () => {
     if (slideRef.current === null) return;
     let lists = slideRef.current.querySelectorAll(".item");
-    
+
     slideRef.current.appendChild(lists[0]);
   };
 
@@ -63,14 +63,13 @@ const MyImageSlider = () => {
         >
           <div className={style["content"]}></div>
         </div>
-       
       </div>
       <div className={style["buttons"] + " flex gap-3"}>
         <button onClick={() => handlePrevClick()} id="prev">
-          prev
+          précédent
         </button>
         <button onClick={() => handleNextClick()} id="next">
-          next
+          suivante
         </button>
       </div>
     </div>
