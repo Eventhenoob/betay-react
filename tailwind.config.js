@@ -9,7 +9,6 @@ module.exports = {
   darkMode: "class",
   content: ["./src/**/*.{ts,tsx}"],
   theme: {
-    // rest of the code
     extend: {
       animation: {
         first: "moveVertical 30s ease infinite",
@@ -69,10 +68,7 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    // rest of the code
-    addVariablesForColors,
-  ],
+  plugins: [addVariablesForColors],
 };
 
 // This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).

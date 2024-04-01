@@ -8,7 +8,7 @@ import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import Contact from "./Pages/Contact";
 import News from "./Pages/News";
-import SingleNews from "./Pages/SingleNews"; // Import the component for single news
+import SingleNews from "./Pages/SingleNews";
 import AddNews from "./Pages/AddNews";
 import Client from "./Pages/Client";
 import Initial from "./Pages/Initial";

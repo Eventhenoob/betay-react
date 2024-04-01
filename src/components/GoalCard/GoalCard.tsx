@@ -14,7 +14,7 @@ const GoalCard = ({ animation, description, heading }: Props) => {
         style["card"]
       }
     >
-      <img className="w-1/2 h-auto -mt-28" src={animation} />
+      <img className="w-1/2 h-auto -mt-12 md:-mt-28" src={animation} />
       <div className=" p-4">
         <h3 className="font-bold text-[#EF7238] text-xl sm:text-2xl md:text-4xl mb-2 ">
           {heading}
