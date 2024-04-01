@@ -1,5 +1,10 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React, { useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
 
 import Home from "./Pages/Home";
 import Agence from "./Pages/Agence";
@@ -14,9 +19,20 @@ import Client from "./Pages/Client";
 import Initial from "./Pages/Initial";
 import Expertises from "./Pages/Expertises";
 
+const ScrollToTop: React.FC = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
+
 const App: React.FC = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Navigation />
       <Routes>
         <Route path="/" element={<Initial />} />
