@@ -23,13 +23,25 @@ export default function Home() {
     <>
       {/* <CursorMask isHovered={isHovered} /> */}
       <header className="flex h-max md:h-screen min-h-screen w-screen flex-col items-center relative justify-center p-5 pt-32  md:p-24">
-        <VideoBG
-          video={isTab ? "header.mp4" : "headerWithText.mp4"}
-          isDarkBg={isTab ? true : false}
-          onLoadedData={() => {
-            setIsVideoLoaded(true);
-          }}
-        />
+        {isTab ? (
+          <VideoBG
+            key={1}
+            video={"header.mp4"}
+            isDarkBg={isTab ? true : false}
+            onLoadedData={() => {
+              setIsVideoLoaded(true);
+            }}
+          />
+        ) : (
+          <VideoBG
+            key={2}
+            video={"headerWithText.mp4"}
+            isDarkBg={isTab ? true : false}
+            onLoadedData={() => {
+              setIsVideoLoaded(true);
+            }}
+          />
+        )}
         {isTab ? (
           <div className="absolute top-0 left-0 flex h-screen w-screen flex-col items-center justify-center p-5 pt-32  md:p-24">
             <div className="content w-full lg:w-2/3  text-center">
