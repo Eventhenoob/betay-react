@@ -27,7 +27,7 @@ const HorizontalScrollCarousel = ({ onMouseEnter, onMouseLeave }: Props) => {
         onMouseLeave={onMouseLeave}
       />
       <div className="flex h-48 items-center justify-center">
-        <PremiumButton text="NOS EXPERTISES" />
+        <PremiumButton href="/expertises" text="NOS EXPERTISES" />
       </div>
     </div>
   );
