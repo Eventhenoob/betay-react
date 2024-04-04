@@ -3,21 +3,29 @@ import AutoChangeableText from "./../components/AutoChangeableTex";
 import HorizontalScrollCarousel from "./..//components/HorizontalScrollCarousel";
 import VideoBG from "./..//components/VideoBG";
 // import CursorMask from "../components/CursorMark/CursorMask";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import MyImageSlider from "../components/MyImageSlider/MyImageSlider";
 import PremiumButton from "../components/Buttons/PermiumButton";
 import useTab from "../utils/useTab";
+import { PiCaretDoubleDownLight } from "react-icons/pi";
 
 export default function Home() {
   // const [isHovered, setIsHovered] = useState(false);
+  const mainRef = useRef<HTMLDivElement>(null);
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   const isTab = useTab();
+
+  const scrollToMain = () => {
+    if(mainRef.current) mainRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
   const enableHover = () => {
     // setIsHovered(true);
   };
   const disableHover = () => {
     // setIsHovered(false);
   };
+
 
   return (
     <>
@@ -73,9 +81,12 @@ export default function Home() {
             ></div>
           </div>
         )}
+
+<button onClick={() => scrollToMain()} className=" text-5xl absolute bottom-0 text-black opacity-75"><PiCaretDoubleDownLight className="animate-bounce cursor-pointer" />
+</button>
       </header>
 
-      <main className="min-h-screen w-full py-10">
+      <main ref={mainRef} className="min-h-screen w-full py-10">
         <section className=" py-14 w-full">
           <HorizontalScrollCarousel
             onMouseEnter={enableHover}

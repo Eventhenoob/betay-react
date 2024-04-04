@@ -61,9 +61,9 @@ const HorizontalScrollCarousel = ({ onMouseEnter, onMouseLeave }: Props) => {
         commerciaux grâce à des solutions digitales innovantes et efficaces.
       </p>
       <HorizontalScrollCarouselContainer />
-      <div className="p-10 flex justify-center items-center">
+      <div className="p-10 my-20 flex justify-center items-center">
         <PremiumButton
-          text="Un projet en tête? contactez nous"
+          text="UN PROJET EN TÊTE? CONTACTEZ-NOUS"
           href="/contact"
         />
       </div>
@@ -83,11 +83,11 @@ const HorizontalScrollCarouselContainer = () => {
     <section ref={targetRef} className="relative h-[500vh] ">
       <div className="sticky top-0 flex h-screen items-center  overflow-hidden">
         <motion.div style={{ x }} className="flex gap-32 p-10 ">
-          <ProjectBox dir="up" heading="Custom Mugs" img="mugTemplate.jpg" />
-          <ProjectBox heading="t-shirt design" img="tShirt.jpg" />
-          <ProjectBox dir="up" heading="Aspen Glass" img="aspenGlass.jpg" />
-          <ProjectBox heading="darwin Tshirts" img="darwinTshirts.jpg" />
-          <ProjectBox dir="up" heading="Aspen logo wall" img="aspenWall.jpg" />
+          <ProjectBox dir="up" heading="Produits personnalisés à votre logo" img="mugTemplate.jpg" />
+          <ProjectBox heading="Produits personnalisés à votre logo" img="tShirt.jpg" />
+          <ProjectBox dir="up" heading="Création de logo et mise en situation" img="aspenGlass.jpg" />
+          <ProjectBox heading="Produits personnalisés à votre logo" img="darwinTshirts.jpg" />
+          <ProjectBox dir="up" heading="Création de logo et mise en situation" img="aspenWall.jpg" />
         </motion.div>
       </div>
     </section>

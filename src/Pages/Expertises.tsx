@@ -32,7 +32,7 @@ const Expertises = () => {
             <h3
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
-              className="text-4xl text-[#EF7238]"
+              className="text-4xl font-heading text-[#EF7238]"
             >
               Stratégie de communication
             </h3>
@@ -80,7 +80,7 @@ const Expertises = () => {
             <h3
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
-              className="text-4xl text-[#EF7238]"
+              className="text-4xl font-heading text-[#EF7238]"
             >
               Création graphique
             </h3>
@@ -91,7 +91,7 @@ const Expertises = () => {
               un même esprit.
             </p>
             <p className="">
-              À l’agence Galago, notre démarche créative consiste à traduire
+              À l’agence Darwin, notre démarche créative consiste à traduire
               l’esprit de votre marque avec clarté et modernité, en respectant
               vos aspirations et le caractère de votre organisation. Vous avez
               déjà une identité ? Nous nous attachons à travailler dans la
@@ -110,11 +110,11 @@ const Expertises = () => {
           </div>
         </section>
         <section className="mt-4 mb-40 flex flex-col flex-wrap justify-center items-center">
-          <h3 className="text-4xl mb-20 font-bold italic">Services</h3>
+          <h3 className="text-4xl font-heading mb-20 font-bold italic">Prestations de service</h3>
           <SkillsTray />
         </section>
         <section className="mt-4 mb-40 flex flex-col flex-wrap justify-center items-center">
-          <h3 className="text-4xl mb-20 font-bold italic">Latest Work</h3>
+          <h3 className="text-4xl font-heading mb-20 font-bold italic">Nos réalisations</h3>
           <WorkTray />
         </section>
       </main>

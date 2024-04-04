@@ -51,11 +51,11 @@ const News = () => {
         }}
         className="flex h-[80vh] w-screen flex-col  items-center justify-center p-5 pt-32  md:p-24"
       >
-        <h1 className="text-9xl uppercase font-heading">News</h1>
+        <h1 className="text-9xl uppercase font-heading">Actualités</h1>
       </header>
 
       <main className="py-20 flex flex-col items-center gap-20 bg-slate-200 justify-center">
-        <h3 className="text-5xl text-black  font-heading">Latest News</h3>
+        <h3 className="text-5xl text-black  font-heading">Notre actualités</h3>
         <div className="flex gap-10 w-[80vw] flex-wrap justify-center items-center ">
           {newsData?.data.map((news) => {
             return (
@@ -83,7 +83,7 @@ const News = () => {
                     : " text-gray-500 bg-white border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 ")
                 }
               >
-                Previous
+                Avant
               </button>
             </li>
             <li>
@@ -171,7 +171,7 @@ const News = () => {
                 onClick={getNextPage}
                 className="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
               >
-                Next
+                Après
               </button>
             </li>
           </ul>

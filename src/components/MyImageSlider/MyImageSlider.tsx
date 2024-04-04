@@ -64,7 +64,7 @@ const MyImageSlider = () => {
           <div className={style["content"]}></div>
         </div>
       </div>
-      <div className={style["buttons"] + " flex gap-3"}>
+      <div className={style["buttons"] + "  flex gap-3"}>
         <button onClick={() => handlePrevClick()} id="prev">
           précédent
         </button>

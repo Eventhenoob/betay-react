@@ -79,7 +79,7 @@ const MessageForm = ({ position, setPosition }: Props) => {
               message: data.message.trim(),
             })
             .then(() => {
-              toggleShowSuccess("Message sent successfully");
+              toggleShowSuccess("message envoyé avec succès");
               setDisableSubmit(false);
               if (
                 !errors.firstName &&
@@ -92,7 +92,7 @@ const MessageForm = ({ position, setPosition }: Props) => {
               }
             })
             .catch((_err: any) => {
-              toggleShowError("Error sending message");
+              toggleShowError("Erreur lors de l'envoi du message");
             });
         })}
         className={
