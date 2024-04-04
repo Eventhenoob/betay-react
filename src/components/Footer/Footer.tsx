@@ -94,7 +94,12 @@ const Footer = () => {
 
       <div className="mt-4 mb-2 text-center justify-center items-center flex gap-4 flex-wrap text-slate-300">
         <p className="">BE-TAYE &#169; 2024. Tous droits réservés.</p>
-        <p className="">mentions légales</p>
+        <Link
+          to={"/legal"}
+          className="relative z-50 hover:text-orange-400 transition-all duration-200"
+        >
+          mentions légales
+        </Link>
       </div>
       <div className="absolute top-0 right-0">
         <Meteors number={40} />

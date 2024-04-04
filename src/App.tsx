@@ -18,6 +18,7 @@ import AddNews from "./Pages/AddNews";
 import Client from "./Pages/Client";
 import Initial from "./Pages/Initial";
 import Expertises from "./Pages/Expertises";
+import Legal from "./Pages/Legal";
 
 const ScrollToTop: React.FC = () => {
   const { pathname } = useLocation();
@@ -30,7 +31,7 @@ const ScrollToTop: React.FC = () => {
 };
 
 const App: React.FC = () => {
-return (
+  return (
     <Router>
       <ScrollToTop />
       <Navigation />
@@ -44,6 +45,7 @@ return (
         <Route path="/actualites/:id" element={<SingleNews />} />
         <Route path="/clients" element={<Client />} />
         <Route path="/expertises" element={<Expertises />} />
+        <Route path="/legal" element={<Legal />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
