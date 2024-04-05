@@ -48,7 +48,7 @@ const Agence = () => {
         <section className="pt-80 relative">
           <div className="relative z-50">
             <h2 className="md:text-6xl font-heading relative z-10 font-extralight text-4xl px-4 md:p-0 md:w-[60%] m-auto text-center text-bold text-[#EF7238] mb-40 md:mb-60">
-              Excellence Collaborative : Élever la Communication
+              Excellence Collaborative <br/> <span className="block mt-3">Élever la Communication</span> 
             </h2>
             <div className="flex justify-evenly  gap-32 md:gap-96 lg:gap-0 flex-wrap">
               <GoalCard
