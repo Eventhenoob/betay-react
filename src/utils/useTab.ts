@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
 
 export default function useTab() {
-  const [isTab, setIsTab] = useState(false);
+  const [isTab, setIsTab] = useState(true);
 
   useEffect(() => {
     const checkMobile = () => {
-      console.log(window.innerWidth <= 978);
       setIsTab(window.innerWidth <= 978);
     };
     checkMobile();
