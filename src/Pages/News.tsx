@@ -51,11 +51,11 @@ const News = () => {
         }}
         className="flex h-[80vh] w-screen flex-col  items-center justify-center p-5 pt-32  md:p-24"
       >
-        <h1 className="text-9xl uppercase font-heading">Actualités</h1>
+        <h1 className="text-3xl sm:text-7xl lg:text-9xl uppercase font-heading">Actualités</h1>
       </header>
 
       <main className="py-20 flex flex-col items-center gap-20 bg-slate-200 justify-center">
-        <h3 className="text-5xl text-black  font-heading">Notre actualités</h3>
+        <h3 className="text-5xl text-center text-black  font-heading">Notre actualités</h3>
         <div className="flex gap-10 w-[80vw] flex-wrap justify-center items-center ">
           {newsData?.data.map((news) => {
             return (

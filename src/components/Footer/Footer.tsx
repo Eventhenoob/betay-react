@@ -1,11 +1,29 @@
 "use client";
 import { Link } from "react-router-dom";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import style from "./style.module.css";
 import { TiSocialInstagram, TiSocialLinkedin } from "react-icons/ti";
 import { Meteors } from "../Meteors/Meteors";
+import axios from "axios";
 
 const Footer = () => {
+  const [showError, setShowError] = useState("");
+  const [showSuccess, setShowSuccess] = useState("");
+  const inputRef = useRef<HTMLInputElement>(null);
+  const toggleShowError = (message: string) => {
+    setShowError(message);
+    setTimeout(() => {
+      setShowError("");
+    }, 4000);
+  };
+
+  const toggleShowSuccess = (message: string) => {
+    setShowSuccess(message);
+    setTimeout(() => {
+      setShowSuccess("");
+    }, 4000);
+  };
+
   // const ballRef = useRef<HTMLDivElement>(null);
   // const ball2Ref = useRef<HTMLDivElement>(null);
   // useEffect(() => {
@@ -34,6 +52,17 @@ const Footer = () => {
   // }, []);
   const footerRef = useRef<HTMLDivElement>(null);
   return (
+    <>
+    {showError && (
+        <p className="bg-red-600 p-4 fixed w-screen top-20 left-1 z-30 text-black font-heading ">
+          {showError}
+        </p>
+      )}
+      {showSuccess && (
+        <p className="bg-[#EF7238] p-4 fixed w-screen top-20 left-1 z-30 text-white font-heading ">
+          {showSuccess}
+        </p>
+      )}
     <footer
       ref={footerRef}
       className=" relative overflow-hidden lg:pl-36 bg-gray-950 w-full p-6 md:p-10 py-20 "
@@ -64,12 +93,30 @@ const Footer = () => {
           0185121850
         </a>
       </div>
-      <form className="mt-10 mb-20 flex-wrap relative z-50">
+      <form onSubmit={(e) => {
+        e.preventDefault();
+        
+        try {
+          axios
+              .post("http://91.108.113.110:3010/newsLetter", {email: inputRef.current?.value})
+              .then((_res) => {
+                toggleShowSuccess("Newsletter Abonné");
+              })
+              .catch((error: any) => {
+                toggleShowError("Il y a une erreur: " + error.response.message);
+              });
+        }
+        catch(err: any) {
+          toggleShowError("Il y a une erreur: " + err?.message);
+        }
+       
+      }} className="mt-10 mb-20 flex-wrap relative z-50">
         <p className="mb-4 text-xl font-bold">
           inscrivez-vous à notre newsletter
         </p>
         <div className="flex gap-2  flex-wrap">
           <input
+            ref={inputRef}
             type="email"
             placeholder="votre adresse email"
             className=" italic rounded-lg border-white border-2 p-2 md:p-4 bg-transparent outline-none text-[#EF7238]"
@@ -126,6 +173,7 @@ const Footer = () => {
         </article>
       </div>
     </footer>
+    </>
   );
 };
 
