@@ -1,9 +1,9 @@
 const WorkTray = () => {
   return (
-    <div className="flex flex-wrap gap-10 justify-center ">
+    <div className="flex flex-wrap gap-10 justify-center items-baseline ">
       <a
         href="/"
-        className="h-96 hover:scale-110 transition-all duration-300 w-80 rounded-lg overflow-hidden shrink-0 bg-slate-950"
+        className="min-h-96 hover:scale-110 transition-all duration-300 w-80 rounded-lg overflow-hidden shrink-0 bg-slate-950"
       >
         <div className="h-1/2 w-full">
           <img
@@ -27,7 +27,7 @@ const WorkTray = () => {
       </a>
       <a
         href="/"
-        className="h-96 hover:scale-110 transition-all duration-300 w-80 rounded-lg overflow-hidden shrink-0 bg-slate-950"
+        className="min-h-96 hover:scale-110 transition-all duration-300 w-80 rounded-lg overflow-hidden shrink-0 bg-slate-950"
       >
         <div className="h-1/2 w-full">
           <img
@@ -51,7 +51,7 @@ const WorkTray = () => {
       </a>
       <a
         href="/"
-        className="h-96 hover:scale-110 transition-all duration-300 w-80 rounded-lg overflow-hidden shrink-0 bg-slate-950"
+        className="min-h-96 hover:scale-110 transition-all duration-300 w-80 rounded-lg overflow-hidden shrink-0 bg-slate-950"
       >
         <div className="h-1/2 w-full">
           <img
@@ -75,7 +75,7 @@ const WorkTray = () => {
       </a>
       <a
         href="/"
-        className="h-96 hover:scale-110 transition-all duration-300 w-80 rounded-lg overflow-hidden shrink-0 bg-slate-950"
+        className="min-h-96 hover:scale-110 transition-all duration-300 w-80 rounded-lg overflow-hidden shrink-0 bg-slate-950"
       >
         <div className="h-1/2 w-full">
           <img
@@ -100,7 +100,7 @@ const WorkTray = () => {
 
       <a
         href="/"
-        className="h-96 hover:scale-110 transition-all duration-300 w-80 rounded-lg overflow-hidden shrink-0 bg-slate-950"
+        className="min-h-96 hover:scale-110 transition-all duration-300 w-80 rounded-lg overflow-hidden shrink-0 bg-slate-950"
       >
         <div className="h-1/2 w-full">
           <img
