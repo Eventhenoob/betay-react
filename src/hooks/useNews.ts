@@ -15,7 +15,7 @@ const useNews = (page: number = 1, limit: number = 10) => {
       setNewsData(null);
       setError(null);
       const response = await axios.get<NewsResponse>(
-        "http://91.108.113.110:3010/news",
+        "https://91.108.113.110:3010/news",
         {
           params: {
             page,

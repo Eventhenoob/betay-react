@@ -73,7 +73,7 @@ const MessageForm = ({ position, setPosition }: Props) => {
         onSubmit={handleSubmit((data) => {
           setDisableSubmit(true);
           axios
-            .post("http://91.108.113.110:3010/mail", {
+            .post("https://91.108.113.110:3010/mail", {
               name: data.firstName.trim() + " " + data.lastName.trim(),
               email: data.email,
               message: data.message.trim(),
