@@ -98,7 +98,7 @@ const Footer = () => {
         
         try {
           axios
-              .post("https://91.108.113.110:3010/newsLetter", {email: inputRef.current?.value})
+              .post("http://91.108.113.110:3010/newsLetter", {email: inputRef.current?.value})
               .then((_res) => {
                 toggleShowSuccess("Newsletter Abonné");
               })

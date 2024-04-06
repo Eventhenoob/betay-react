@@ -13,7 +13,7 @@ const useSingleNews = (id: string) => {
       setNewsData(null);
       setError(null);
       const response = await axios.get<NewsResponse>(
-        `https://91.108.113.110:3010/news/${id}`
+        `http://91.108.113.110:3010/news/${id}`
       );
 
       setNewsData(response.data);
